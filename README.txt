@@ -11,7 +11,7 @@ Settings
     stylesheet:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/stylesheet.txt
     building cost increase:115%
     building cost refund:50%
-    spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
+    spritesheet:icons, 16 by 16, https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/icon-spritesheet.png
     stylesheet:stuff/bigBlue.css
 
 Layout
@@ -149,29 +149,94 @@ Buildings
         
     *heater
         name:Heater
-        desc:Generates a little heat, which will make your Kamoshiglace generate a little cappyness.
+        desc:Generates a little heat to make your freezing kamoshikas warmer and happier.
         cost:20 capriCrystals
 	tags:healcold
 	on tick:yield 0.1*(coldKamoshikas) cappyness
         req:1 coldKamoshika:earned
+        icon:icons[0,1]
+
+    *bigBlanket
+	name:Big blanket
+	desc:The caprinaes can all huddle under this big blanket for warmth. It is woven from a thread synthesized using cappyness.
+	cost:100 capriCrystals
+	tags:healcold
+	on tick:yield 0.2*(coldKamoshikas) cappyness
+	req:10 coldKamoshikas:earned
+        icon:icons[0,2]
 
     *toyBox
 	name:Toy box
 	desc:For a fleeting moment, the sad serows will be very happy to have toys to play with.
-	cost:20 capriCrystals
+	cost:30 capriCrystals
 	tags:healsad
 	on tick:yield 0.2*(sadSerows) cappyness
 	req:1 sadSerow:earned
+        icon:icons[0,3]
+
+    *goatMovies
+	name:Goat movies
+	desc:This goat-cinema will allow your serows to enjoy fun movies together, distracting them from the pain of existence.
+	cost:200 capriCrystals
+	tags:healsad
+	on tick:yield 0.4*(sadSerows) cappyness
+	req:10 sadSerows:earned
+        icon:icons[0,4]
 
     *grassPatch
-
-    *punchingBall
-
-    *headrubDispenser
+        name:Grass patch
+        desc:Grow some grass to feed your hungry markhors! But this will not satiate them for long.
+        cost:40 capriCrystals
+	tags:healhungry
+	on tick:yield 0.5*(hungryMarkhors) cappyness
+        req:1 hungryMarkhor:earned
+        icon:icons[0,5]
 
     *foodDelivery
+        name:Food delivery
+        desc:Get some food delivered directly to your goatstep! Shovel that right into the Markhor's mouth.
+        cost:500 capriCrystals
+	tags:healhungry
+	on tick:yield 4*(hungryMarkhors) cappyness
+        req:10 hungryMarkhor:earned
+        icon:icons[0,6]
 
-    *
+    *punchingBag
+        name:Punching bag
+        desc:A punching (well more like headbutting) bag so your angriest goats can take it out on something.
+        cost:50 capriCrystals
+	tags:healangry
+	on tick:yield 1*(angryTahrs) cappyness
+        req:1 angryTahr:earned
+        icon:icons[0,7]
+
+    *meditationWaterfall
+	name:Meditation waterfall
+	desc:A gorgeous waterfall that your tahrs can soak under while reflecting on the futile aspects of rage and the power of love.
+	cost:800 capriCrystals
+	tags:healangry
+	on tick:yield 10*(angryTahrs) cappyness
+        req:1 angryTahr:earned
+        icon:icons[0,8]
+
+    *headscritchDispenser
+        name:Headscritch dispenser
+        desc:A nice headscratch dispenser to help your loneliest goat feel a little loved.
+        cost:100 capriCrystals
+	tags:heallonely
+	on tick:yield 5*(lonelyGoats) cappyness
+        req:1 lonelyGoat:earned
+        icon:icons[0,9]
+
+    *playPen
+	name:Play pen
+	desc:A play pen for both your goatlitaires and your sad serows! Playing together means being together!
+	cost:1000 capriCrystals
+	tags:heallonely, healsad
+	on tick:yield (20*(lonelyGoats) + 0.5*(sadSerows) cappyness
+	req:2 lonelyGoat:earned
+	req:20 sadSerows:earned
+        icon:icons[0,10]
 
     *coldExplorer
 	name:Train a cold explorer
@@ -191,26 +256,10 @@ Buildings
 	cost increase:200%
 	req:5 sadSerow:earned
 
-    *bigBlanket
-	name:Big blanket
-	desc:The caprinaes can all huddle under this big blanket for warmth. It is woven from a thread synthesized using cappyness.
-	cost:100 capriCrystals
-	tags:healcold
-	on tick:yield 0.2*(coldKamoshikas) cappyness
-	req:10 coldKamoshikas:earned
-
-    *goatMovies
-	name:Goat movies
-	desc:This goat-cinema will allow your taiwanese serows to enjoy fun movies together, distracting them from the dread of existence. Goat moviemakers need cappyness to create new films, though.
-	cost:200 capriCrystals
-	tags:healsad
-	on tick:yield 0.4*(sadSerows) cappyness
-	req:10 sadSerows:earned
-
     *coldMutator
 	name:Cold-mutation
-	desc:This process can turn a cold kamoshita into a sad serow, taking the cold from outside the goat and injecting it inside the goat.
-	cost:1 coldKamoshita, 120 capriCrystals
+	desc:This process can distillate 5 cold kamoshita into a sad serow, taking the cold from <i>outside</i> the goats and concentrating it within a single goat.
+	cost:5 coldKamoshita, 500 capriCrystals
 	tags:transmutation
 	on earn:yield 1 sadSerow
 	req:1 sadSerow
