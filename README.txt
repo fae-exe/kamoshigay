@@ -14,7 +14,7 @@ Settings
     stylesheet:stuff/bigBlue.css
 
 Layout
-*buttons
+*main
     contains:gachabuttons, needsbuttons
     header:BUTTONS
 	*gachabuttons
@@ -53,11 +53,11 @@ Layout
 Buttons
     *kamoshiGacha
         name:KAMOSHIGACHA
-        desc:Click to spend CAPRICRISTALS and gain sad caprinae.
+        desc:Click to spend capriCrystalS and gain sad caprinae.
         on click:
-		if (capriCristals >= 120) 
+		if (capriCrystals >= 120) 
 			anim icon wobble
-			lose 120 capriCristals
+			lose 120 capriCrystals
 			do gachagacha
 		end
 	end
@@ -69,7 +69,7 @@ Buttons
 		end
 	end
 	tags:gachamachine
-	cost:120 capriCristals
+	cost:120 capriCrystals
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/gacha.PNG
         no text
         class:bigButton hasFlares
@@ -77,72 +77,75 @@ Buttons
         tooltip origin:bottom
         tooltip class:red
 
-    *cuteBlanket
-	name:Cute Blanket
-	desc:Click on this CUTE BLANKET to generate warmth!
-	on click:anim icon wobble
-	on click:yield 1 warmth
-	tags:needsfulfiller
-
-    *toyBox
-	name:Toy Box
-	desc:Click on this TOY BOX to gain toys for caprines!
-	on click:anim icon wobble
-	on click:yield 1 toy
-	tags:needsfulfiller
+    *capriCrystalarium
+	name:capriCrystalARIUM
+	desc:Click to gain capriCrystalS to spend on the KAMOSHIGACHA.
+	tags:crystals
+	on click:yield 1 capriCrystal
         
 Resources
-    *capriCristal|capriCristals
-        name:CapriCristals
+    *capriCrystal|capriCrystals
+        name:capriCrystals
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon:icons[0,1]
 	show earned
-	tags:currencies
-	on tick:yield 1 capriCristal
-	on start:yield 120 capriCristals
-
-    *warmth
-        name:Warmth
-        desc:The WARMTH you'll need to heat back up any cold caprinae from the KAMOSHIGACHA. When you do, they'll get adopted!
-        icon:icons[2,0]
-	tags:needs
-
-    *toy|toys
-	name:Toys
-	desc:TOYS to play with the sad caprines in order to cheer them up so they can happily find a loving family!
-	icon:icons[4,0]
-	tags:needs
+	tags:crystals
+	on tick:yield 1 capriCrystal
+	on start:yield 120 capriCrystals
 
     *cappyness
 	name:Cappyness
 	desc:Caprine happiness! You'll earn it every time you send a caprinae for adoption!
 	icon:icons[3,0]
 	show earned
-	tags:currencies
+	tags:cappyness
         hidden when 0
 
     *coldKamoshika|coldKamoshikas
-        name:KAMOSHIGLACE|KAMOSHIGLACES
+        name:Kamoshiglace|Kamoshiglaces
 	tags:caprine
-        desc:These kamoshikas are so cold they turned to ice and need to be warmed up. If you do, they'll get happy and be adopted!
+        desc:These kamoshikas are so cold they turned to ice and need to be warmed up.
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
 
     *sadSerow|sadSerows
-	name:SAD SEROW|SAD SEROWS
+	name:Sad serow|Sad serows
 	tags:caprine
-	desc:These taiwanese serows are sad because they want to play with you. If you do, they'll get happy and be adopted!
+	desc:These taiwanese serows are sad because they want to play!
 	icon:https://upload.wikimedia.org/wikipedia/commons/1/16/%E9%95%B7%E9%AC%83%E5%B1%B1%E7%BE%8A.jpg
+
+    *angryTahr|angryTahrs
+	name:Fulminatahr|Fulminatahrs
+	tags:caprine
+	desc:These tahrs are very angry and need to calm down. Maybe some meditation, or a punching-ball.
+
+    *lonelyGoat|lonelyGoats
+	name:Goatlitaire|Goatlitaires
+	tags:caprine
+	desc:These mountain goats have lives alone on their big mountains for so long, they want a little company.
 
 Buildings
     *TEMPLATE
         on click:anim glow
         
-    *warmUpKamoshika
-        name:Warm up a KAMOSHIGLACE
-	tags:adoptionAction
-        desc:Make a KAMOSHIGLACE warm and happy.<//><b>Effect:</b><.>Gives 120 CAPRICRISTALS and generates CAPPYNESS.
-        icon:icons[3,0]
-        cost:1 coldKamoshika, 100 warmth
-        on click:yield 120 capriCristals
-	on tick:yield 0.1 cappyness
+    *heater
+        name:Heater
+        desc:Generates a little heat, which will make your Kamoshiglace generate a little cappyness.
+        cost:20 capriCrystals
+	tags:cold
+	on tick:yield 0.1*(coldKamoshikas) cappyness
         req:1 coldKamoshika
+
+    *coldExplorer
+	name:Cold explorer
+	desc:Gives a very heavy coat to a kamoshika so it can face its fear and explore the wilds in search of Capricrystals!
+	cost:100 capriCrystals, 1 coldKamoshika
+	tags:job
+	on tick:yield 0.5 capriCrystal
+
+     *bigBlanket
+	name:Big blanket
+	desc:The caprinaes can all huddle under this big blanket for warmth. It is woven from a thread synthesized using cappyness.
+	cost:10 cappyness
+	tags:cold
+	on tick:yield 0.2*(coldKamoshikas) cappyness
+	req:10 coldKamoshikas
