@@ -31,7 +31,11 @@ Layout
     	header:FULFILL THEIR NEEDS
 	class:fullWidth
   *buttons
-    contains:Buttons
+    contains:gachabutton, needsbuttons
+	*gachabutton
+	     contains:tag:gachamachine
+	*needsbutton
+	     contains:tag:needsfulfiller
 *store
   contains:buildings, upgrades
   *buildings
@@ -62,6 +66,7 @@ Buttons
 			yield 1 sadSerow
 		end
 	end
+	tags:gachamachine
 	cost:120 capriCristals
         icon:stuff/bunny.png
         no text
@@ -71,14 +76,22 @@ Buttons
         tooltip class:red
 
     *cuteBlanket
-	name:CUTE BLANKET
+	name:Cute Blanket
 	desc:Click on this CUTE BLANKET to generate warmth!
 	on click:anim icon wobble
 	on click:yield 1 warmth
+	tags:needsfulfiller
+
+    *toyBox
+	name:Toy Box
+	desc:Click on this TOY BOX to gain toys for caprines!
+	on click:anim icon wobble
+	on click:yield 1 toy
+	tags:needsfulfiller
         
 Resources
     *capriCristal|capriCristals
-        name:CAPRICRISTALS
+        name:CapriCristals
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. <//> You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon:icons[0,1]
 	show earned
@@ -87,14 +100,19 @@ Resources
 	on start:yield 120 capriCristals
 
     *warmth
-        name:WARMTH
-        desc:The WARMTH you'll need to heat back up any cold caprinae from the KAMOSHIGACHA. <//> When you do, they'll get adopted!
+        name:Warmth
+        desc:The WARMTH you'll need to heat back up any cold caprinae from the KAMOSHIGACHA. When you do, they'll get adopted!
         icon:icons[2,0]
 	tags:needs
-        class:noBackground
+
+    *toy|toys
+	name:Toys
+	desc:TOYS to play with the sad caprines in order to cheer them up so they can happily find a loving family!
+	icon:icons[4,0]
+	tags:needs
 
     *cappyness
-	name:CAPPYNESS
+	name:Cappyness
 	desc:Caprine happiness! You'll earn it every time you send a caprinae for adoption!
 	icon:icons[3,0]
 	show earned
@@ -108,7 +126,7 @@ Resources
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
 
     *sadSerow|sadSerows
-	name:FORMOSAN SEROW|FORMOSAN SEROW
+	name:SAD SEROW|SAD SEROWS
 	tags:caprine
 	desc:These taiwanese serows are sad because they want to play with you. If you do, they'll get happy and be adopted!
 	icon:https://upload.wikimedia.org/wikipedia/commons/1/16/%E9%95%B7%E9%AC%83%E5%B1%B1%E7%BE%8A.jpg
