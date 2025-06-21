@@ -16,10 +16,10 @@ Settings
 Layout
 *gachabuttons
     contains:tag:gachamachine
-    class:fullWidth
+    // class:fullWidth
 *needsbuttons
     contains:tag:needsfulfiller
-    class:fullWidth
+    // class:fullWidth
 *buttons
     contains:gachabuttons, needsbuttons
     header:BUTTONS
