@@ -14,46 +14,34 @@ Settings
     stylesheet:stuff/bigBlue.css
 
 Layout
-*gachabuttons
+*gacha
     contains:tag:gachamachine
-    // class:fullWidth
-*needsbuttons
-    contains:tag:needsfulfiller
-    // class:fullWidth
-/*
-*buttons
-    contains:gachabuttons, needsbuttons
-    header:BUTTONS
-*/
-*currencyResources
-    	contains:tag:currencies
-    	header:GACHA CURRENCIES
-	class:fullWidth
-*sadCaprines
-    	contains:tag:caprine
-    	header:SAD CAPRINAES
-	class:fullWidth
-/*
-*needsResources
-    	contains:tag:needs
-    	header:FULFILL THEIR NEEDS
-	class:fullWidth
-*/
 
-*res
-    contains:currencyResources, sadCaprines, needsResources, buttons
+*kamoshikas
+    header:KAMOSHIKAS
+    contains:sadbox, coldbox
 
-*store
-  contains:buildings, upgrades
-  *buildings
+*sadbox
+    	contains:sadSerow
+
+*coldbox
+	contains:coldKamoshika
+
+*buildings
     contains:BulkDisplay, Buildings
     header:Buildings
     tooltip origin:left
-  *upgrades
+
+*upgradesbox
     contains:Upgrades
     header:Upgrades
     costs:hide
     names:hide
+
+*cappyness
+    	contains:tag:currencies
+    	header:GACHA CURRENCIES
+
         
 Buttons
     *kamoshiGacha
