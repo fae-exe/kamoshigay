@@ -68,7 +68,7 @@ Buttons
 	end
 	tags:gachamachine
 	cost:120 capriCristals
-        icon:stuff/bunny.png
+        icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/gacha.PNG
         no text
         class:bigButton hasFlares
         icon class:shadowed
@@ -92,7 +92,7 @@ Buttons
 Resources
     *capriCristal|capriCristals
         name:CapriCristals
-        desc:Fell from heaven with the KAMOSHIGACHA MACHINE. <//> You can spend those on the KAMOSHIGACHA. (And some other things.)
+        desc:Fell from heaven with the KAMOSHIGACHA MACHINE. You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon:icons[0,1]
 	show earned
 	tags:currencies
