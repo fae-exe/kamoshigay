@@ -1,0 +1,8 @@
+
+#box-main{
+top: 51%;
+width:49%;
+right: 0%;
+position: absolute;
+height: 32px;
+}
