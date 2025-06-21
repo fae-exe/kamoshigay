@@ -47,13 +47,13 @@ height:50%;
     background-repeat: no-repeat;
 }
 
-.thing.bigIcon
+.bigIcon
 {
     height:100%;
     width:100%;
 }
 
-.thing.medIcon
+.medIcon
 {
    height:400px;
    width:400px;
