@@ -15,10 +15,10 @@ Settings
     stylesheet:stuff/bigBlue.css
 
 Layout
-*gacha
+*gachabox
     contains:tag:gachamachine
 
-*kamoshikas
+*kamoshikabox
     header:KAMOSHIKAS
     contains:sadbox, coldbox
 
@@ -28,18 +28,18 @@ Layout
 *coldbox
 	contains:coldKamoshika
 
-*buildings
+*buildingbox
     contains:BulkDisplay, Buildings
     header:Buildings
     tooltip origin:left
 
-*upgradesbox
+*upgradebox
     contains:Upgrades
     header:Upgrades
     costs:hide
     names:hide
 
-*cappyness
+*cappynessbox
     	contains:tag:currencies
     	header:GACHA CURRENCIES
 
