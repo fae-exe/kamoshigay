@@ -14,15 +14,15 @@ Settings
     stylesheet:stuff/bigBlue.css
 
 Layout
+*gachabuttons
+    contains:tag:gachamachine
+    class:fullWidth
+*needsbuttons
+    contains:tag:needsfulfiller
+    class:fullWidth
 *buttons
     contains:gachabuttons, needsbuttons
     header:BUTTONS
-	*gachabuttons
-	     contains:tag:gachamachine
-	     class:fullWidth
-	*needsbuttons
-	     contains:tag:needsfulfiller
-	     class:fullWidth
 *currencyResources
     	contains:tag:currencies
     	header:GACHA CURRENCIES
