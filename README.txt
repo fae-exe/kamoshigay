@@ -15,9 +15,9 @@ Settings
 
 Layout
   *main
-	contains:res, buttons
+	contains:res
   *res
-    contains:currencyResources, sadCaprines, needsResources
+    contains:currencyResources, sadCaprines, needsResources, buttons
     *currencyResources
     	contains:tag:currencies
     	header:GACHA CURRENCIES
