@@ -14,6 +14,8 @@ Settings
     stylesheet:stuff/bigBlue.css
 
 Layout
+  use default
+/*
   *resources
     contains:Resources
     header:These are your resources.
@@ -24,6 +26,7 @@ Layout
   *unlockables
     contains:Upgrades, Achievements
     names:hide
+*/
         
 Buttons
     *kamoshiGacha
