@@ -17,12 +17,11 @@ Layout
     use default
         
 Buttons
-    *bunnyButton
-        name:Make a bunny
-        desc:Click this little bunny to get more bunnies!
+    *kamoshiGacha
+        name:KAMOSHIGACHA
+        desc:Click to spend CAPRICRISTALS and gain sad caprinae.
         on click:anim icon wobble
-        on click:yield 1 bunny
-        on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
+        on click: if (have capriCristals >= 120) yield 1 coldKamoshika
         icon:stuff/bunny.png
         no text
         class:bigButton hasFlares
@@ -31,20 +30,27 @@ Buttons
         tooltip class:red
         
 Resources
-    *bunny|bunnies
-        name:Bunny|Bunnies
-        desc:These are your bunnies. You can use them to purchase things. Your goal is to have as many bunnies as possible!
+    *coldKamoshika
+        name:Cold kamoshika|Cold kamoshikas
+        desc:These kamoshikas are cold and need to be warmed up. If you do, they'll get happy and be adopted!
         icon:icons[0,0]
         class:noBackground
         show earned
-        
+
+    *capriCristal|capriCristals
+        name: CAPRICRISTALS
+        desc: Fell from heaven with the KAMOSHIGACHA MACHINE. You can spend those on the KAMOSHIGACHA. (And some other things.)
+        icon: icons[0,1]
+
     *goldenCarrot|goldenCarrots
         name:Golden carrot|Golden carrots
         desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
         icon:icons[0,1]
         class:noBackground
         hidden when 0
-        
+
+/*
+
 Shinies
     *luckyBunny
         on click:log Woop
@@ -428,3 +434,5 @@ Achievements
         desc:Complete building the <b>freedom fortress</b>.<//>This is it. You beat the game!
         req:100 fortress
         icon:icons[3,8] icons[0,4]
+
+*/
