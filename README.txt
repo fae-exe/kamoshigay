@@ -49,7 +49,7 @@ Layout
     names:hide
 
 *cappynessbox
-    	contains:tag:crystals, cappynessres
+    	contains:tag:crystals, cappyness
     	header:GACHA CURRENCIES
 
         

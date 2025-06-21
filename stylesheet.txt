@@ -41,6 +41,11 @@ width:20%;
 height:50%;
 }
 
+.thing.bigButton
+{
+    height:80%;
+}
+
 
 
 
