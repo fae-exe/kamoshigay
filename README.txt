@@ -40,7 +40,7 @@ Layout
     names:hide
 
 *cappynessbox
-    	contains:tag:currencies
+    	contains:tag:crystals, cappynessres
     	header:GACHA CURRENCIES
 
         
@@ -92,7 +92,7 @@ Resources
 	desc:Caprine happiness! You'll earn it every time you send a caprinae for adoption!
 	icon:icons[3,0]
 	show earned
-	tags:cappyness
+	tags:cappynessres
         hidden when 0
 
     *coldKamoshika|coldKamoshikas
