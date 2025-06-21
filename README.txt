@@ -14,9 +14,16 @@ Settings
     stylesheet:stuff/bigBlue.css
 
 Layout
-  *main
-	contains:res
-  *res
+*buttons
+    contains:gachabuttons, needsbuttons
+    header:BUTTONS
+	*gachabuttons
+	     contains:tag:gachamachine
+	     class:fullWidth
+	*needsbuttons
+	     contains:tag:needsfulfiller
+	     class:fullWidth
+*res
     contains:currencyResources, sadCaprines, needsResources, buttons
     *currencyResources
     	contains:tag:currencies
@@ -30,15 +37,7 @@ Layout
     	contains:tag:needs
     	header:FULFILL THEIR NEEDS
 	class:fullWidth
-  *buttons
-    contains:gachabuttons, needsbuttons
-    header:BUTTONS
-	*gachabuttons
-	     contains:tag:gachamachine
-	     class:fullWidth
-	*needsbuttons
-	     contains:tag:needsfulfiller
-	     class:fullWidth
+
 *store
   contains:buildings, upgrades
   *buildings
