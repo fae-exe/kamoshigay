@@ -50,8 +50,8 @@ Resources
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. <//> You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon:icons[0,1]
 	show earned
-	on tick: give 1 capriCristal
-	on start: give 120 capriCristals
+	on tick:yield 1 capriCristal
+	on start:yield 120 capriCristals
 
     *warmth
         name:WARMTH
