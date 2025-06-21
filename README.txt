@@ -34,8 +34,10 @@ Layout
     contains:gachabuttons, needsbuttons
 	*gachabuttons
 	     contains:tag:gachamachine
+	     class:fullWidth
 	*needsbuttons
 	     contains:tag:needsfulfiller
+	     class:fullWidth
 *store
   contains:buildings, upgrades
   *buildings
