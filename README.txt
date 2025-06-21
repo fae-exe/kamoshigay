@@ -97,24 +97,24 @@ Resources
 
     *coldKamoshika|coldKamoshikas
         name:Kamoshiglace|Kamoshiglaces
-	tags:caprine
+	tags:caprine, cold
         desc:These kamoshikas are so cold they turned to ice and need to be warmed up.
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
 
     *sadSerow|sadSerows
 	name:Sad serow|Sad serows
-	tags:caprine
+	tags:caprine, sad
 	desc:These taiwanese serows are sad because they want to play!
 	icon:https://upload.wikimedia.org/wikipedia/commons/1/16/%E9%95%B7%E9%AC%83%E5%B1%B1%E7%BE%8A.jpg
 
     *angryTahr|angryTahrs
 	name:Fulminatahr|Fulminatahrs
-	tags:caprine
+	tags:caprine, angry
 	desc:These tahrs are very angry and need to calm down. Maybe some meditation, or a punching-ball.
 
     *lonelyGoat|lonelyGoats
 	name:Goatlitaire|Goatlitaires
-	tags:caprine
+	tags:caprine, lonely
 	desc:These mountain goats have lives alone on their big mountains for so long, they want a little company.
 
 Buildings
@@ -125,7 +125,7 @@ Buildings
         name:Heater
         desc:Generates a little heat, which will make your Kamoshiglace generate a little cappyness.
         cost:20 capriCrystals
-	tags:cold
+	tags:healcold
 	on tick:yield 0.1*(coldKamoshikas) cappyness
         req:1 coldKamoshika
 
@@ -140,6 +140,10 @@ Buildings
 	name:Big blanket
 	desc:The caprinaes can all huddle under this big blanket for warmth. It is woven from a thread synthesized using cappyness.
 	cost:10 cappyness
-	tags:cold
+	tags:healcold
 	on tick:yield 0.2*(coldKamoshikas) cappyness
 	req:10 coldKamoshikas
+
+    *toyBox
+	name:Toy box
+	desc:
