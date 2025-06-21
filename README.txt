@@ -41,6 +41,8 @@ Buttons
 			yield 1 coldKamoshika
 		else
 			yield 1 sadSerow
+		end
+	end
 	cost:120 capriCristals
         icon:stuff/bunny.png
         no text
