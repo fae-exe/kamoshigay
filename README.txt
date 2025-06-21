@@ -21,8 +21,8 @@ Buttons
         name:KAMOSHIGACHA
         desc:Click to spend CAPRICRISTALS and gain sad caprinae.
         on click:anim icon wobble
-        on click: yield 1 coldKamoshika
-//	cost: 120 capriCristals
+        on click:yield 1 coldKamoshika
+	cost:120 capriCristals
         icon:stuff/bunny.png
         no text
         class:bigButton hasFlares
@@ -33,11 +33,11 @@ Buttons
     *cuteBlanket
 	name:CUTE BLANKET
 	desc:Click on this CUTE BLANKET to generate warmth!
-	on click: anim icon wobble
-	on click: yield 1 warmth
+	on click:anim icon wobble
+	on click:yield 1 warmth
         
 Resources
-    *coldKamoshika
+    *coldKamoshika|coldKamoshikas
         name:KAMOSHIGLACE|KAMOSHIGLACES
         desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> If you do, they'll get happy and be adopted!
         icon:icons[0,0]
@@ -46,9 +46,9 @@ Resources
         hidden when 0
 
     *capriCristal|capriCristals
-        name: CAPRICRISTALS
-        desc: Fell from heaven with the KAMOSHIGACHA MACHINE. <//> You can spend those on the KAMOSHIGACHA. (And some other things.)
-        icon: icons[0,1]
+        name:CAPRICRISTALS
+        desc:Fell from heaven with the KAMOSHIGACHA MACHINE. <//> You can spend those on the KAMOSHIGACHA. (And some other things.)
+        icon:icons[0,1]
 	show earned
 	on tick: give 1 capriCristal
 	on start: give 120 capriCristals
@@ -60,9 +60,9 @@ Resources
         class:noBackground
 
     *cappyness
-	name: CAPPYNESS
-	desc: Caprine happiness! You'll earn it every time you send a caprinae for adoption!
-	icon: icons[3,0]
+	name:CAPPYNESS
+	desc:Caprine happiness! You'll earn it every time you send a caprinae for adoption!
+	icon:icons[3,0]
 	show earned
         hidden when 0
 
