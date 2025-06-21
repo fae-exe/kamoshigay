@@ -165,10 +165,25 @@ Buildings
 
     *toyBox
 	name:Toy box
-	desc:For a fleeing moment, the sad serows will be very happy to have toys to play with.
+	desc:For a fleeting moment, the sad serows will be very happy to have toys to play with.
 	cost:20 capriCrystals
 	tags:healsad
 	on tick:yield 0.2*(sadSerows) cappyness
 	req:1 sadSerow
 
-    *
+    *goatMovies
+	name:Goat movies
+	desc:This goat-cinema will allow your taiwanese serows to enjoy fun movies together, distracting them from the dread of existence. Goat moviemakers need cappyness to create new films, though.
+	cost:10 cappyness
+	tags:healsad
+	on tick:yield 0.4*(sadSerows) cappyness
+	req:10 sadSerows
+
+    *coldMutator
+	name:Cold-mutation
+	desc:This process can turn a cold kamoshita into a sad serow, taking the cold from outside the goat and injecting it inside the goat.
+	cost:1 coldKamoshita, 120 capriCrystals
+	tags:transmutation
+	on earn:yield 1 sadSerow
+	req:1 sadSerow
+	cost increase:100%
