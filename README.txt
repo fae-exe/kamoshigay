@@ -31,10 +31,10 @@ Layout
     	header:FULFILL THEIR NEEDS
 	class:fullWidth
   *buttons
-    contains:gachabutton, needsbuttons
-	*gachabutton
+    contains:gachabuttons, needsbuttons
+	*gachabuttons
 	     contains:tag:gachamachine
-	*needsbutton
+	*needsbuttons
 	     contains:tag:needsfulfiller
 *store
   contains:buildings, upgrades
