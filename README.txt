@@ -20,7 +20,7 @@ Layout
 
 *kamoshikabox
     header:KAMOSHIKAS
-    contains:sadbox, coldbox
+    contains:sadbox, coldbox, hungrybox, lonelybox, angrybox
 
 *sadbox
     	contains:tag:sad
