@@ -20,9 +20,11 @@ Layout
 *needsbuttons
     contains:tag:needsfulfiller
     // class:fullWidth
+/*
 *buttons
     contains:gachabuttons, needsbuttons
     header:BUTTONS
+*/
 *currencyResources
     	contains:tag:currencies
     	header:GACHA CURRENCIES
@@ -31,10 +33,13 @@ Layout
     	contains:tag:caprine
     	header:SAD CAPRINAES
 	class:fullWidth
+/*
 *needsResources
     	contains:tag:needs
     	header:FULFILL THEIR NEEDS
 	class:fullWidth
+*/
+
 *res
     contains:currencyResources, sadCaprines, needsResources, buttons
 
