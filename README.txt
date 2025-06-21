@@ -7,7 +7,7 @@ Let's make a game!
     version:1
 
 Settings
-    background:stuff/meadow.jpg
+    background:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/background.PNG
     building cost increase:115%
     building cost refund:50%
     spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
