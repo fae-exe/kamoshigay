@@ -23,20 +23,20 @@ Layout
 	*needsbuttons
 	     contains:tag:needsfulfiller
 	     class:fullWidth
-*res
-    contains:currencyResources, sadCaprines, needsResources, buttons
-    *currencyResources
+*currencyResources
     	contains:tag:currencies
     	header:GACHA CURRENCIES
 	class:fullWidth
-     *sadCaprines
+*sadCaprines
     	contains:tag:caprine
     	header:SAD CAPRINAES
 	class:fullWidth
-     *needsResources
+*needsResources
     	contains:tag:needs
     	header:FULFILL THEIR NEEDS
 	class:fullWidth
+*res
+    contains:currencyResources, sadCaprines, needsResources, buttons
 
 *store
   contains:buildings, upgrades
