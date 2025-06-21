@@ -72,10 +72,10 @@ Buildings
         
     *warmUpKamoshika
         name:Warm up a KAMOSHIKOLD
-	tags: adoptionAction
+	tags:adoptionAction
         desc:A tiny little cage.<//><b>Effect:</b><.>Produces 1 rabbit every 10 seconds.
         icon:icons[3,0]
         cost:1 coldKamoshika, 100 warmth
-        on click: yield 120 capriCristals
-	on tick: yield 0.1 CAPPYNESS
-        req: 1 coldKamoshita
+        on click:yield 120 capriCristals
+	on tick:yield 0.1 cappyness
+        req:1 coldKamoshika:earned
