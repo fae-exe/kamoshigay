@@ -8,47 +8,41 @@ Let's make a game!
 
 Settings
     background:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/background.PNG
+    stylesheet:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/stylesheet.txt
     building cost increase:115%
     building cost refund:50%
     spritesheet:icons, 48 by 48, stuff/bunnyIcons.png
     stylesheet:stuff/bigBlue.css
 
 Layout
-*main
-    contains:gachabuttons, needsbuttons
-    header:BUTTONS
-	*gachabuttons
-	     contains:tag:gachamachine
-	     class:fullWidth
-	*needsbuttons
-	     contains:tag:needsfulfiller
-	     class:fullWidth
-*res
-    contains:currencyResources, sadCaprines, needsResources, buttons
-    *currencyResources
-    	contains:tag:currencies
-    	header:GACHA CURRENCIES
-	class:fullWidth
-     *sadCaprines
-    	contains:tag:caprine
-    	header:SAD CAPRINAES
-	class:fullWidth
-     *needsResources
-    	contains:tag:needs
-    	header:FULFILL THEIR NEEDS
-	class:fullWidth
+*gachabox
+    contains:tag:gachamachine
 
-*store
-  contains:buildings, upgrades
-  *buildings
+*kamoshikabox
+    header:KAMOSHIKAS
+    contains:sadbox, coldbox
+
+*sadbox
+    	contains:tag:sad
+
+*coldbox
+	contains:tag:cold
+
+*buildingbox
     contains:BulkDisplay, Buildings
     header:Buildings
     tooltip origin:left
-  *upgrades
+
+*upgradebox
     contains:Upgrades
     header:Upgrades
     costs:hide
     names:hide
+
+*cappynessbox
+    	contains:tag:currencies
+    	header:GACHA CURRENCIES
+
         
 Buttons
     *kamoshiGacha
