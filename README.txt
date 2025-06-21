@@ -34,7 +34,6 @@ Buttons
 	name:CUTE BLANKET
 	desc:Click on this CUTE BLANKET to generate warmth!
 	on click: anim icon wobble
-	on click: yield 1 warmth
         
 Resources
     *coldKamoshika
