@@ -21,33 +21,60 @@ Buttons
         name:KAMOSHIGACHA
         desc:Click to spend CAPRICRISTALS and gain sad caprinae.
         on click:anim icon wobble
-        on click: if (have capriCristals >= 120) yield 1 coldKamoshika
+        on click: yield 1 coldKamoshika
+	cost: 120 capriCristals
         icon:stuff/bunny.png
         no text
         class:bigButton hasFlares
         icon class:shadowed
         tooltip origin:bottom
         tooltip class:red
+
+    *cuteBlanket
+	name:CUTE BLANKET
+	desc:Click on this CUTE BLANKET to generate warmth!
+	on click: anim icon wobble
+	on click yield 1 warmth
         
 Resources
     *coldKamoshika
-        name:Cold kamoshika|Cold kamoshikas
-        desc:These kamoshikas are cold and need to be warmed up. If you do, they'll get happy and be adopted!
+        name:KAMOSHIGLACE|KAMOSHIGLACES
+        desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> If you do, they'll get happy and be adopted!
         icon:icons[0,0]
         class:noBackground
         show earned
 
     *capriCristal|capriCristals
         name: CAPRICRISTALS
-        desc: Fell from heaven with the KAMOSHIGACHA MACHINE. You can spend those on the KAMOSHIGACHA. (And some other things.)
+        desc: Fell from heaven with the KAMOSHIGACHA MACHINE. <//> You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon: icons[0,1]
+	show earned
+	on tick: give 1 capriCristal
 
-    *goldenCarrot|goldenCarrots
-        name:Golden carrot|Golden carrots
-        desc:These shiny carrots are terribly rare, terribly precious and terribly delicious!
-        icon:icons[0,1]
+    *warmth
+        name:WARMTH
+        desc:The WARMTH you'll need to heat back up any cold caprinae from the KAMOSHIGACHA. <//> When you do, they'll get adopted!
+        icon:icons[2,0]
         class:noBackground
-        hidden when 0
+
+    *cappyness
+	name: CAPPYNESS
+	desc: Caprine happiness! You'll earn it every time you send a caprinae for adoption!
+	icon: icons[3,0]
+
+Buildings
+    *TEMPLATE
+        on click:anim glow
+        
+    *warmUpKamoshika
+        name:Warm up a KAMOSHIKOLD
+	tags: adoptionAction
+        desc:A tiny little cage.<//><b>Effect:</b><.>Produces 1 rabbit every 10 seconds.
+        icon:icons[3,0]
+        cost:1 coldKamoshika, 100 warmth
+        on click:yield 120 capriCristals
+	on tick: yield 0.1 CAPPYNESS
+        req: 1 coldKamoshita
 
 /*
 
