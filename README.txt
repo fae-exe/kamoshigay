@@ -20,7 +20,7 @@ Layout
 
 *kamoshikabox
     header:KAMOSHIKAS
-    contains:sadbox, coldbox, hungrybox, lonelybox, angrybox
+    contains: coldbox, sadbox, hungrybox, lonelybox, angrybox
 
 *sadbox
     	contains:tag:sad
@@ -49,7 +49,7 @@ Layout
     names:hide
 
 *cappynessbox
-    	contains:tag:crystals, tag:cappyness
+    	contains:tag:crystals, tag:cappynessres
     	header:GACHA CURRENCIES
 
         
@@ -87,14 +87,14 @@ Buttons
         tooltip class:red
 
     *capriCrystalarium
-	name:capriCrystalARIUM
+	name:The Capricrystalarium
 	desc:Click to gain capriCrystalS to spend on the KAMOSHIGACHA.
 	tags:crystals
 	on click:yield 1 capriCrystal
         
 Resources
     *capriCrystal|capriCrystals
-        name:capriCrystals
+        name:Capricrystals
 	class:bigIcon
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon:icons[0,1]
@@ -113,28 +113,33 @@ Resources
 
     *coldKamoshika|coldKamoshikas
         name:Kamoshiglace|Kamoshiglaces
+	class:mediumIcon
 	tags:caprine, cold
         desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> <b>Rarity:</b> Common.
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
 
     *sadSerow|sadSerows
 	name:Sad serow|Sad serows
+	class:mediumIcon
 	tags:caprine, sad
 	desc:These taiwanese serows are sad because they want to play! <//> <b>Rarity:</b> Uncommon.
 	icon:https://upload.wikimedia.org/wikipedia/commons/1/16/%E9%95%B7%E9%AC%83%E5%B1%B1%E7%BE%8A.jpg
 
     *hungryMarkhor|hungryMarkhors
 	name:Hungrhor|Hungrhors
+	class:mediumIcon
 	tags:carpine, hungry
 	desc:These Markhors are always hungry. You could be shoveling grass into them all day long. <//> <b>Rarity:</b> Rare.
 
     *angryTahr|angryTahrs
 	name:Fulminatahr|Fulminatahrs
+	class:mediumIcon
 	tags:caprine, angry
 	desc:These tahrs are very angry and need to calm down. Maybe some meditation, or a punching-ball. <//> <b>Rarity:</b> Extra rare.
 
     *lonelyGoat|lonelyGoats
 	name:Goatlitaire|Goatlitaires
+	class:mediumIcon
 	tags:caprine, lonely
 	desc:These mountain goats have lives alone on their big mountains for so long, they want a little company. <//> <b>Rarity:</b> Secret rare.
 
@@ -148,7 +153,7 @@ Buildings
         cost:20 capriCrystals
 	tags:healcold
 	on tick:yield 0.1*(coldKamoshikas) cappyness
-        req:1 coldKamoshika
+        req:1 coldKamoshika:earned
 
     *toyBox
 	name:Toy box
@@ -156,7 +161,17 @@ Buildings
 	cost:20 capriCrystals
 	tags:healsad
 	on tick:yield 0.2*(sadSerows) cappyness
-	req:1 sadSerow
+	req:1 sadSerow:earned
+
+    *grassPatch
+
+    *punchingBall
+
+    *headrubDispenser
+
+    *foodDelivery
+
+    *
 
     *coldExplorer
 	name:Train a cold explorer
@@ -164,29 +179,33 @@ Buildings
 	cost:100 capriCrystals, 1 coldKamoshika
 	tags:job
 	on tick:yield 0.5 capriCrystal
+	cost increase:200%
+	req:5 coldKamoshikas:earned
 
     *goatRescuer
 	name:Train a serow rescuer
-	desc:Gives helicopters and pilot licenses to your sad serows. The fulfillment of saving kamoshkas from the cold distracts them from their dread.
+	desc:Gives helicopters and pilot licenses to your sad serows. The fulfillment of saving kamoshikas from the cold distracts them from their awful sadness.
 	cost:250 capriCrystals, 1 sadSerow
 	tags:job
-	on tick:yield 0.01 coldKamoshika
+	on tick:yield 0.02 coldKamoshika
+	cost increase:200%
+	req:5 sadSerow:earned
 
     *bigBlanket
 	name:Big blanket
 	desc:The caprinaes can all huddle under this big blanket for warmth. It is woven from a thread synthesized using cappyness.
-	cost:10 cappyness
+	cost:100 capriCrystals
 	tags:healcold
 	on tick:yield 0.2*(coldKamoshikas) cappyness
-	req:10 coldKamoshikas
+	req:10 coldKamoshikas:earned
 
     *goatMovies
 	name:Goat movies
 	desc:This goat-cinema will allow your taiwanese serows to enjoy fun movies together, distracting them from the dread of existence. Goat moviemakers need cappyness to create new films, though.
-	cost:10 cappyness
+	cost:200 capriCrystals
 	tags:healsad
 	on tick:yield 0.4*(sadSerows) cappyness
-	req:10 sadSerows
+	req:10 sadSerows:earned
 
     *coldMutator
 	name:Cold-mutation
