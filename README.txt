@@ -76,7 +76,7 @@ Buildings
         desc:A tiny little cage.<//><b>Effect:</b><.>Produces 1 rabbit every 10 seconds.
         icon:icons[3,0]
         cost:1 coldKamoshika, 100 warmth
-        on click:yield 120 capriCristals
+        on click: yield 120 capriCristals
 	on tick: yield 0.1 CAPPYNESS
         req: 1 coldKamoshita
 
