@@ -12,7 +12,6 @@ Settings
     building cost increase:115%
     building cost refund:50%
     spritesheet:icons, 16 by 16, https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/icon-spritesheet.png
-    stylesheet:stuff/bigBlue.css
 
 Layout
 *gachabox
@@ -22,11 +21,11 @@ Layout
     header:KAMOSHIKAS
     contains: coldbox, sadbox, hungrybox, lonelybox, angrybox
 
-*sadbox
-    	contains:tag:sad
-
 *coldbox
 	contains:tag:cold
+
+*sadbox
+    	contains:tag:sad
 
 *hungrybox
 	contains:tag:hungry
