@@ -32,6 +32,7 @@ Layout
 	class:fullWidth
   *buttons
     contains:gachabuttons, needsbuttons
+    header:BUTTONS
 	*gachabuttons
 	     contains:tag:gachamachine
 	     class:fullWidth
