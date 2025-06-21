@@ -233,7 +233,7 @@ Buildings
 	desc:A play pen for both your goatlitaires and your sad serows! Playing together means being together!
 	cost:1000 capriCrystals
 	tags:heallonely, healsad
-	on tick:yield (20*(lonelyGoats) + 0.5*(sadSerows) cappyness
+	on tick:yield (20*(lonelyGoats) + 0.5*(sadSerows)) cappyness
 	req:2 lonelyGoat:earned
 	req:20 sadSerows:earned
         icon:icons[0,10]
