@@ -44,6 +44,19 @@ height:50%;
 .thing.bigButton
 {
     height:80%;
+    width:20%;
+}
+
+.thing.bigIcon
+{
+    height:100%;
+    width:100%;
+}
+
+.thing.medIcon
+{
+   height:400px;
+   width:400px;
 }
 
 
