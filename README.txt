@@ -28,6 +28,15 @@ Layout
 *coldbox
 	contains:tag:cold
 
+*hungrybox
+	contains:tag:hungry
+
+*lonelybox
+	contains:tag:lonely
+
+*angrybox
+	contains:tag:angry
+
 *buildingbox
     contains:BulkDisplay, Buildings
     header:Buildings
@@ -56,10 +65,16 @@ Buttons
 		end
 	end
 	on gachagacha:
-		if (chance(50%))
-			yield 1 coldKamoshika
-		else
+		if (chance(1%))
+			yield 1 lonelyGoat
+		else if (chance(3%))
+			yield 1 angryTahr
+		else if (chance(7%))
+			yield 1 hungryMarkhor
+		else if (chance(20%))
 			yield 1 sadSerow
+		else
+			yield 1 coldKamoshika
 		end
 	end
 	tags:gachamachine
@@ -93,29 +108,33 @@ Resources
 	icon:icons[3,0]
 	show earned
 	tags:cappynessres
-        hidden when 0
 
     *coldKamoshika|coldKamoshikas
         name:Kamoshiglace|Kamoshiglaces
 	tags:caprine, cold
-        desc:These kamoshikas are so cold they turned to ice and need to be warmed up.
+        desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> <b>Rarity:</b> Common.
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
 
     *sadSerow|sadSerows
 	name:Sad serow|Sad serows
 	tags:caprine, sad
-	desc:These taiwanese serows are sad because they want to play!
+	desc:These taiwanese serows are sad because they want to play! <//> <b>Rarity:</b> Uncommon.
 	icon:https://upload.wikimedia.org/wikipedia/commons/1/16/%E9%95%B7%E9%AC%83%E5%B1%B1%E7%BE%8A.jpg
+
+    *hungryMarkhor|hungryMarkhors
+	name:Hungrhor|Hungrhors
+	tags:carpine, hungry
+	desc:These Markhors are always hungry. You could be shoveling grass into them all day long. <//> <b>Rarity:</b> Rare.
 
     *angryTahr|angryTahrs
 	name:Fulminatahr|Fulminatahrs
 	tags:caprine, angry
-	desc:These tahrs are very angry and need to calm down. Maybe some meditation, or a punching-ball.
+	desc:These tahrs are very angry and need to calm down. Maybe some meditation, or a punching-ball. <//> <b>Rarity:</b> Extra rare.
 
     *lonelyGoat|lonelyGoats
 	name:Goatlitaire|Goatlitaires
 	tags:caprine, lonely
-	desc:These mountain goats have lives alone on their big mountains for so long, they want a little company.
+	desc:These mountain goats have lives alone on their big mountains for so long, they want a little company. <//> <b>Rarity:</b> Secret rare.
 
 Buildings
     *TEMPLATE
@@ -146,4 +165,10 @@ Buildings
 
     *toyBox
 	name:Toy box
-	desc:
+	desc:For a fleeing moment, the sad serows will be very happy to have toys to play with.
+	cost:20 capriCrystals
+	tags:healsad
+	on tick:yield 0.2*(sadSerows) cappyness
+	req:1 sadSerow
+
+    *
