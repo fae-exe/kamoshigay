@@ -29,8 +29,18 @@ Buttons
     *kamoshiGacha
         name:KAMOSHIGACHA
         desc:Click to spend CAPRICRISTALS and gain sad caprinae.
-        on click:anim icon wobble
-        on click:yield 1 coldKamoshika
+        on click:
+		if (capriCristals >= 120) 
+			anim icon wobble
+			lose 120 capriCristals
+			do gachagacha
+		end
+	end
+	on gachagacha:
+		if (chance(50%))
+			yield 1 coldKamoshika
+		else
+			yield 1 sadSerow
 	cost:120 capriCristals
         icon:stuff/bunny.png
         no text
@@ -46,14 +56,6 @@ Buttons
 	on click:yield 1 warmth
         
 Resources
-    *coldKamoshika|coldKamoshikas
-        name:KAMOSHIGLACE|KAMOSHIGLACES
-        desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> If you do, they'll get happy and be adopted!
-        icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
-        class:noBackground
-        show earned
-        hidden when 0
-
     *capriCristal|capriCristals
         name:CAPRICRISTALS
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. <//> You can spend those on the KAMOSHIGACHA. (And some other things.)
@@ -75,16 +77,29 @@ Resources
 	show earned
         hidden when 0
 
+Items
+    *coldKamoshika|coldKamoshikas
+        name:KAMOSHIGLACE|KAMOSHIGLACES
+	tag:caprine
+        desc:These kamoshikas are so cold they turned to ice and need to be warmed up. If you do, they'll get happy and be adopted!
+        icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
+
+    *sadSerow|sadSerows
+	name:FORMOSAN SEROW|FORMOSAN SEROW
+	tag:caprine
+	desc:These taiwanese serows are sad because they want to play with you. If you do, they'll get happy and be adopted!
+	icon:https://upload.wikimedia.org/wikipedia/commons/1/16/%E9%95%B7%E9%AC%83%E5%B1%B1%E7%BE%8A.jpg
+
 Buildings
     *TEMPLATE
         on click:anim glow
         
     *warmUpKamoshika
-        name:Warm up a KAMOSHIKOLD
+        name:Warm up a KAMOSHIGLACE
 	tags:adoptionAction
-        desc:A tiny little cage.<//><b>Effect:</b><.>Produces 1 rabbit every 10 seconds.
+        desc:Make a KAMOSHIGLACE warm and happy.<//><b>Effect:</b><.>Gives 120 CAPRICRISTALS and generates CAPPYNESS.
         icon:icons[3,0]
         cost:1 coldKamoshika, 100 warmth
         on click:yield 120 capriCristals
 	on tick:yield 0.1 cappyness
-        req:1 coldKamoshika:earned
+        req:1 coldKamoshika
