@@ -105,7 +105,7 @@ Resources
 
     *cappyness
 	name:Cappyness
-	class:mediumIcon
+	icon class:mediumIcon
 	desc:Caprine happiness! You'll earn it every time you send a caprinae for adoption!
 	icon:icons[3,0]
 	show earned
