@@ -34,7 +34,7 @@ Buttons
 	name:CUTE BLANKET
 	desc:Click on this CUTE BLANKET to generate warmth!
 	on click: anim icon wobble
-	on click yield 1 warmth
+	on click: yield 1 warmth
         
 Resources
     *coldKamoshika
@@ -43,6 +43,7 @@ Resources
         icon:icons[0,0]
         class:noBackground
         show earned
+        hidden when 0
 
     *capriCristal|capriCristals
         name: CAPRICRISTALS
@@ -50,6 +51,7 @@ Resources
         icon: icons[0,1]
 	show earned
 	on tick: give 1 capriCristal
+	on start: give 120 capriCristals
 
     *warmth
         name:WARMTH
@@ -61,6 +63,8 @@ Resources
 	name: CAPPYNESS
 	desc: Caprine happiness! You'll earn it every time you send a caprinae for adoption!
 	icon: icons[3,0]
+	show earned
+        hidden when 0
 
 Buildings
     *TEMPLATE
