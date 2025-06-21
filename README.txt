@@ -22,7 +22,7 @@ Buttons
         desc:Click to spend CAPRICRISTALS and gain sad caprinae.
         on click:anim icon wobble
         on click: yield 1 coldKamoshika
-	cost: 120 capriCristals
+//	cost: 120 capriCristals
         icon:stuff/bunny.png
         no text
         class:bigButton hasFlares
@@ -34,6 +34,7 @@ Buttons
 	name:CUTE BLANKET
 	desc:Click on this CUTE BLANKET to generate warmth!
 	on click: anim icon wobble
+	on click: yield 1 warmth
         
 Resources
     *coldKamoshika
