@@ -148,21 +148,6 @@ Buildings
 	on tick:yield 0.1*(coldKamoshikas) cappyness
         req:1 coldKamoshika
 
-    *coldExplorer
-	name:Cold explorer
-	desc:Gives a very heavy coat to a kamoshika so it can face its fear and explore the wilds in search of Capricrystals!
-	cost:100 capriCrystals, 1 coldKamoshika
-	tags:job
-	on tick:yield 0.5 capriCrystal
-
-     *bigBlanket
-	name:Big blanket
-	desc:The caprinaes can all huddle under this big blanket for warmth. It is woven from a thread synthesized using cappyness.
-	cost:10 cappyness
-	tags:healcold
-	on tick:yield 0.2*(coldKamoshikas) cappyness
-	req:10 coldKamoshikas
-
     *toyBox
 	name:Toy box
 	desc:For a fleeting moment, the sad serows will be very happy to have toys to play with.
@@ -170,6 +155,28 @@ Buildings
 	tags:healsad
 	on tick:yield 0.2*(sadSerows) cappyness
 	req:1 sadSerow
+
+    *coldExplorer
+	name:Train a cold explorer
+	desc:Gives very heavy coats to a kamoshikas so they can face their fear and explore the wilds in search of Capricrystals!
+	cost:100 capriCrystals, 1 coldKamoshika
+	tags:job
+	on tick:yield 0.5 capriCrystal
+
+    *goatRescuer
+	name:Train a serow rescuer
+	desc:Gives helicopters and pilot licenses to your sad serows. The fulfillment of saving kamoshkas from the cold distracts them from their dread.
+	cost:250 capriCrystals, 1 sadSerow
+	tags:job
+	on tick:yield 0.01 coldKamoshika
+
+    *bigBlanket
+	name:Big blanket
+	desc:The caprinaes can all huddle under this big blanket for warmth. It is woven from a thread synthesized using cappyness.
+	cost:10 cappyness
+	tags:healcold
+	on tick:yield 0.2*(coldKamoshikas) cappyness
+	req:10 coldKamoshikas
 
     *goatMovies
 	name:Goat movies
