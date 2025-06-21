@@ -95,7 +95,7 @@ Buttons
 Resources
     *capriCrystal|capriCrystals
         name:capriCrystals
-	class:bigIcon
+	icon class:bigIcon
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon:icons[0,1]
 	show earned
@@ -105,7 +105,7 @@ Resources
 
     *cappyness
 	name:Cappyness
-	class:mediumIcon
+	icon class:mediumIcon
 	desc:Caprine happiness! You'll earn it every time you send a caprinae for adoption!
 	icon:icons[3,0]
 	show earned
