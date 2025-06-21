@@ -14,7 +14,16 @@ Settings
     stylesheet:stuff/bigBlue.css
 
 Layout
-    use default
+  *resources
+    contains:Resources
+    header:These are your resources.
+  *buildings
+    contains:Buildings
+    header:These are things you can build.
+    tooltip origin:left
+  *unlockables
+    contains:Upgrades, Achievements
+    names:hide
         
 Buttons
     *kamoshiGacha
