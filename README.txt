@@ -40,7 +40,7 @@ Resources
     *coldKamoshika|coldKamoshikas
         name:KAMOSHIGLACE|KAMOSHIGLACES
         desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> If you do, they'll get happy and be adopted!
-        icon:icons[0,0]
+        icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
         class:noBackground
         show earned
         hidden when 0
