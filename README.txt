@@ -42,15 +42,15 @@ Layout
     header:Buildings
     tooltip origin:left
 
+*cappynessbox
+    contains:tag:crystals, tag:cappynessres
+    header:GACHA CURRENCIES
+
 *upgradebox
     contains:Upgrades
     header:Upgrades
     costs:hide
     names:hide
-
-*cappynessbox
-    	contains:tag:crystals, tag:cappynessres
-    	header:GACHA CURRENCIES
 
         
 Buttons
