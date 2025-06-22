@@ -410,11 +410,3 @@ Upgrades
         cost:100 kamosmiles
         passive:multiply kamosmile yield of heater by 2
         req:10 heater:owned
-
-	*betterConductors
-        name:Better conductors
-        desc:<q>An improvement in heating technology. Doubles the efficiency of your heaters.</q>.<//><b>Effect:</b><.>Heaters generate twice as much <b>kamosmiles</b>.
-        icon:icons[1,1]
-        cost:100 kamosmiles
-        passive:multiply kamosmile yield of heater by 2
-        req:10 heater:owned
