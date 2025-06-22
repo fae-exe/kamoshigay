@@ -8,10 +8,9 @@ Let's make a game!
 
 Settings
     background:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/background.PNG
-    stylesheet:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/stylesheet.txt
+    stylesheet:https://pastebin.com/raw/WsB6rxdr
     building cost increase:115%
     building cost refund:50%
-    spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/icon-spritesheet.png
     stylesheet:stuff/bigBlue.css
 
 Layout
@@ -23,6 +22,7 @@ Layout
     contains:coldbox, sadbox, hungrybox, lonelybox, angrybox
 
 *coldbox
+	icons:show
 	contains:tag:cold
 
 *sadbox
@@ -95,25 +95,25 @@ Buttons
 Resources
     *capriCrystal|capriCrystals
         name:Capricrystals
-	class:bigButton
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
 	show earned
+	icon class:kamoIcon
 	tags:crystals
 	on tick:yield 1 capriCrystal
 	on start:yield 120 capriCrystals
 
     *cappyness
 	name:Cappyness
-	icon class:mediumIcon
 	desc:Caprine happiness! You'll earn it every time you send a caprinae for adoption!
-	icon:icons[3,0]
+	icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
 	show earned
 	tags:cappynessres
 
     *coldKamoshika|coldKamoshikas
         name:Kamoshiglace|Kamoshiglaces
-	icon class:bigIcon
+	class:cold
+	icon class:kamoIcon
 	tags:caprine, cold
         desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> <b>Rarity:</b> Common.
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
@@ -121,7 +121,8 @@ Resources
 
     *sadSerow|sadSerows
 	name:Sad serow|Sad serows
-	icon class:bigIcon
+	class:sad
+	icon class:kamoIcon
 	tags:caprine, sad
 	desc:These taiwanese serows are sad because they want to play! <//> <b>Rarity:</b> Uncommon.
 	icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/sadserow.PNG
@@ -129,21 +130,21 @@ Resources
 
     *hungryMarkhor|hungryMarkhors
 	name:Hungrhor|Hungrhors
-	icon class:mediumIcon
-	tags:carpine, hungry
+	icon class:kamoIcon
+	tags:caprine, hungry
 	desc:These Markhors are always hungry. You could be shoveling grass into them all day long. <//> <b>Rarity:</b> Rare.
 	hidden when 0
 
     *angryTahr|angryTahrs
 	name:Fulminatahr|Fulminatahrs
-	icon class:mediumIcon
+	icon class:kamoIcon
 	tags:caprine, angry
 	desc:These tahrs are very angry and need to calm down. Maybe some meditation, or a punching-ball. <//> <b>Rarity:</b> Extra rare.
 	hidden when 0
 
     *lonelyGoat|lonelyGoats
 	name:Goatlitaire|Goatlitaires
-	icon class:mediumIcon
+	icon class:kamoIcon
 	tags:caprine, lonely
 	desc:These mountain goats have lives alone on their big mountains for so long, they want a little company. <//> <b>Rarity:</b> Secret rare.
 	hidden when 0
@@ -154,23 +155,23 @@ Buildings
         
     *heater
         name:Heater
+		class:cold
         desc:Generates a little heat to make your freezing kamoshikas warmer and happier.
         cost:20 capriCrystals
 	icon class:mediumIcon
 	tags:healcold
 	on tick:yield 0.1*(coldKamoshikas) cappyness
         req:1 coldKamoshika:earned
-        icon:icons[0,1]
 
     *bigBlanket
 	name:Big blanket
+	class:cold
 	desc:The caprinaes can all huddle under this big blanket for warmth. It is woven from a thread synthesized using cappyness.
 	cost:100 capriCrystals
 	icon class:mediumIcon
 	tags:healcold
 	on tick:yield 0.2*(coldKamoshikas) cappyness
 	req:10 coldKamoshikas:earned
-        icon:icons[0,2]
 
     *toyBox
 	name:Toy box
@@ -180,7 +181,6 @@ Buildings
 	tags:healsad
 	on tick:yield 0.2*(sadSerows) cappyness
 	req:1 sadSerow:earned
-        icon:icons[0,3]
 
     *goatMovies
 	name:Goat movies
@@ -190,7 +190,6 @@ Buildings
 	tags:healsad
 	on tick:yield 0.4*(sadSerows) cappyness
 	req:10 sadSerows:earned
-        icon:icons[0,4]
 
     *grassPatch
         name:Grass patch
@@ -200,7 +199,6 @@ Buildings
 	tags:healhungry
 	on tick:yield 0.5*(hungryMarkhors) cappyness
         req:1 hungryMarkhor:earned
-        icon:icons[0,5]
 
     *foodDelivery
         name:Food delivery
@@ -210,7 +208,6 @@ Buildings
 	tags:healhungry
 	on tick:yield 4*(hungryMarkhors) cappyness
         req:10 hungryMarkhor:earned
-        icon:icons[0,6]
 
     *punchingBag
         name:Punching bag
@@ -220,7 +217,6 @@ Buildings
 	tags:healangry
 	on tick:yield 1*(angryTahrs) cappyness
         req:1 angryTahr:earned
-        icon:icons[0,7]
 
     *meditationWaterfall
 	name:Meditation waterfall
@@ -230,7 +226,6 @@ Buildings
 	tags:healangry
 	on tick:yield 10*(angryTahrs) cappyness
         req:1 angryTahr:earned
-        icon:icons[0,8]
 
     *headscritchDispenser
         name:Headscritch dispenser
@@ -240,7 +235,6 @@ Buildings
 	tags:heallonely
 	on tick:yield 5*(lonelyGoats) cappyness
         req:1 lonelyGoat:earned
-        icon:icons[0,9]
 
     *playPen
 	name:Play pen
@@ -251,7 +245,6 @@ Buildings
 	on tick:yield (20*(lonelyGoats) + 0.5*(sadSerows)) cappyness
 	req:2 lonelyGoat:earned
 	req:20 sadSerows:earned
-        icon:icons[0,10]
 
     *coldExplorer
 	name:Train a cold explorer
