@@ -260,7 +260,7 @@ Buildings
 
     *coldExplorer
 		name:Train a cold explorer
-		desc:Gives very heavy coats to a kamoshikas so they can face their fear and explore the wilds in search of capriCoins!
+		desc:Gives very heavy coats to a kamoshikas so they can face their fear and explore the wilds in search of capricoins!
 		cost:100 capriCoins, 1 coldKamoshika
 		tags:job
 		on tick:yield 0.5 capriCoin
@@ -278,20 +278,20 @@ Buildings
 
 	*smileCondensator
 		name:Smile condensator
-		desc:<q>A machine to turn the happiness of kamoshikas into kamoshicoins.</q> <//> <.> Gives 0.1 kamoshicoin per second at base. <.> Decreases kamosmile income by 1 kamosmile per second.
+		desc:<q>A machine to turn the happiness of kamoshikas into capriCoins.</q> <//> <.> Gives 0.1 capricoin per second at base. <.> Decreases kamosmile income by 1 kamosmile per second.
 		cost:20 kamosmiles
 		tags:smileConverter
-		on tick:yield 0.1 kamoshicoin
+		on tick:yield 0.1 capriCoin
 		on tick:yield -1 kamosmile
 		req:(kamosmile:ps) >= 1
 		req:(kamosmiles:earned) >= 10
 
 	*kamoshiParty
 		name:Kamoshiparty harvester|Kamoshiparty harvesters
-		desc:<q>The happy kamoshikas are partying! Their residual smiles can be converted into a lot of kamoshicoins.</q> <//> <.> Gives 1 kamoshicoin per second at base. <.> Decreases kamosmile income by 2 kamosmiles per second.
+		desc:<q>The happy kamoshikas are partying! Their residual smiles can be converted into a lot of capricoins.</q> <//> <.> Gives 1 capricoin per second at base. <.> Decreases kamosmile income by 2 kamosmiles per second.
 		cost:100 kamosmiles
 		tags:smileConverter
-		on tick:yield 1 kamoshicoin
+		on tick:yield 1 capriCoin
 		on tick:yield -2 kamosmile
 		req:(kamosmile:ps) >= 2
 		req:(kamosmiles:earned) >= 50
@@ -306,20 +306,20 @@ Buildings
 	
 	*wishResonator
 		name:Wish resonator|Wish resonators
-		desc:<q>The happier the kamoshikas, the more potent are their wish for others to experience the same.</q> <//> <.> Gives 5 kamoshicoin per second at base. <.> Decreases kamosmile income by 5 kamosmiles per second.
+		desc:<q>The happier the kamoshikas, the more potent are their wish for others to experience the same.</q> <//> <.> Gives 5 capricoin per second at base. <.> Decreases kamosmile income by 5 kamosmiles per second.
 		cost:1000 kamosmiles
 		tags:smileConverter
-		on tick:yield 5 kamoshicoin
+		on tick:yield 5 capriCoin
 		on tick:yield -5 kamosmile
 		req:(kamosmile:ps) >= 5
 		req:(kamosmiles:earned) >= 500
 
 	*smileReactor
 		name:Smile reactor|Smile reactors
-		desc:<q>The happiness of the kamoshikas is growing too potent - it has to be canalyzed.</q> <//> <.> Gives 10 kamoshicoin per second at base. <.> Decreases kamosmile income by 8 kamosmiles per second.
+		desc:<q>The happiness of the kamoshikas is growing too potent - it has to be canalyzed.</q> <//> <.> Gives 10 capricoin per second at base. <.> Decreases kamosmile income by 8 kamosmiles per second.
 		cost:5000 kamosmiles
 		tags:smileConverter
-		on tick:yield 10 kamoshicoin
+		on tick:yield 10 capriCoin
 		on tick:yield -8 kamosmile
 		req:(kamosmile:ps) >= 8
 		req:(kamosmiles:earned) >= 2500
