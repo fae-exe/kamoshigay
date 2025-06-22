@@ -235,7 +235,7 @@ Buildings
 		icon class:kamoIcon
 		tags:healangry
 		on tick:yield 25*(angryShikas) kamosmiles
-        req:10 grassPatch:owned
+        req:10 grassPatch
         icon:icons[0,8]
 
     *headscritchDispenser
