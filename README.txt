@@ -156,7 +156,7 @@ Buildings
         
     *heater
         name:Heater
-        desc:<q>Generates a little heat to make your freezing kamoshikas warmer and happier.</q> <//> <.> Generates [(kamosmiles yield of heater)] kamosmiles per second.
+        desc:<q>Generates a little heat to make your freezing kamoshikas warmer and happier.</q> <//> <.> Generates [kamosmiles:ps] kamosmiles per second.
         cost:20 capriCoins
 	icon class:mediumIcon
 		class:cold
