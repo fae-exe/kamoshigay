@@ -286,7 +286,7 @@ Buildings
 	*mentalHealthCenter
 		name:Mental health center|Mental health centers
 		desc:<q>An extensive care facility to help kamoshikas struggling with mental health issues.</q> <//> <.> Generates kamosmiles for each of your sad, angry, and lonely kamoshikas.
-		cost:20000 capricoins
+		cost:20000 capriCoins
 		icon class:mediumIcon
 		tags:heallonely, healsad, mentalHealth
 		on tick:yield (100*(lonelyShikas) + 40*(angryShika) + 5*(sadShikas)) kamosmiles
@@ -384,6 +384,7 @@ Buildings
 		cost:1000 capriCoins
 		on tick:yield -120 capriCoins
 		on tick:do gachagacha with kamoshiGacha
+		req:(capriCoins:ps) >= 120
 
 Upgrades
     *TEMPLATE
@@ -398,5 +399,5 @@ Upgrades
         icon:icons[1,1]
         cost:100 kamosmiles
         passive:multiply kamosmile yield of heater by 2
-        req:10 heater:earned
+        req:10 heater
 	
