@@ -346,7 +346,7 @@ Buildings
 		tags:smileConverter
 		on tick:yield 10 capriCoin
 		on tick:yield -8 kamosmile
-		on earn: show this
+		on earn:show this
 		req:(kamosmile:ps) >= 8
 		req:(kamosmiles:earned) >= 2500
 
