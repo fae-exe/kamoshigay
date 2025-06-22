@@ -113,35 +113,40 @@ Resources
 
     *coldKamoshika|coldKamoshikas
         name:Kamoshiglace|Kamoshiglaces
-	class:mediumIcon
+	icon class:bigIcon
 	tags:caprine, cold
         desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> <b>Rarity:</b> Common.
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
+	hidden when 0
 
     *sadSerow|sadSerows
 	name:Sad serow|Sad serows
-	class:mediumIcon
+	icon class:bigIcon
 	tags:caprine, sad
 	desc:These taiwanese serows are sad because they want to play! <//> <b>Rarity:</b> Uncommon.
 	icon:https://upload.wikimedia.org/wikipedia/commons/1/16/%E9%95%B7%E9%AC%83%E5%B1%B1%E7%BE%8A.jpg
+	hidden when 0
 
     *hungryMarkhor|hungryMarkhors
 	name:Hungrhor|Hungrhors
-	class:mediumIcon
+	icon class:mediumIcon
 	tags:carpine, hungry
 	desc:These Markhors are always hungry. You could be shoveling grass into them all day long. <//> <b>Rarity:</b> Rare.
+	hidden when 0
 
     *angryTahr|angryTahrs
 	name:Fulminatahr|Fulminatahrs
-	class:mediumIcon
+	icon class:mediumIcon
 	tags:caprine, angry
 	desc:These tahrs are very angry and need to calm down. Maybe some meditation, or a punching-ball. <//> <b>Rarity:</b> Extra rare.
+	hidden when 0
 
     *lonelyGoat|lonelyGoats
 	name:Goatlitaire|Goatlitaires
-	class:mediumIcon
+	icon class:mediumIcon
 	tags:caprine, lonely
 	desc:These mountain goats have lives alone on their big mountains for so long, they want a little company. <//> <b>Rarity:</b> Secret rare.
+	hidden when 0
 
 Buildings
     *TEMPLATE
