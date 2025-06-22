@@ -9,7 +9,7 @@ Let's make a game!
 Settings
     background:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/background.PNG
     stylesheet:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/stylesheet.txt
-	spritesheet:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/icon-spritesheet.png
+	spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/icon-spritesheet.png
     building cost increase:115%
     building cost refund:50%
     stylesheet:stuff/bigBlue.css
@@ -42,6 +42,7 @@ Layout
     contains:BulkDisplay, Buildings
     header:Buildings
     tooltip origin:left
+	ps:show
 
 *kamosmilesbox
     contains:tag:crystals, tag:kamosmilesres
@@ -283,17 +284,45 @@ Buildings
 		on tick:yield 0.1 kamoshicoin
 		on tick:yield -1 kamosmile
 		req:(kamosmile:ps) >= 1
+		req:(kamosmiles:earned) >= 10
 
 	*kamoshiParty
-		name:Kamoshiparty|Kamoshiparties
-		desc:<q>Organize parties for happy kamoshikas. Their residual smiles can be converted into a lot of kamoshicoins.</q> <//> <.> Gives 1 kamoshicoin per second at base. <.> Decreases kamosmile income by 2 kamosmiles per second.
+		name:Kamoshiparty harvester|Kamoshiparty harvesters
+		desc:<q>The happy kamoshikas are partying! Their residual smiles can be converted into a lot of kamoshicoins.</q> <//> <.> Gives 1 kamoshicoin per second at base. <.> Decreases kamosmile income by 2 kamosmiles per second.
 		cost:100 kamosmiles
 		tags:smileConverter
 		on tick:yield 1 kamoshicoin
 		on tick:yield -2 kamosmile
 		req:(kamosmile:ps) >= 2
+		req:(kamosmiles:earned) >= 50
+
+	*kamoshiRevue
+		name:Kamoshi-revue|Kamoshi-revues
+		desc:<q>A special revue kamoshikas can go to to watch kamoshidrag shows.</q>
+
+	*gourmetRestaurant
+		name:Gourmet restaurant
+		desc:<q>A fine dining establishment kamoshikas can go to in order to eat and enjoy the company.</q>
 	
-	*
+	*wishResonator
+		name:Wish resonator|Wish resonators
+		desc:<q>The happier the kamoshikas, the more potent are their wish for others to experience the same.</q> <//> <.> Gives 5 kamoshicoin per second at base. <.> Decreases kamosmile income by 5 kamosmiles per second.
+		cost:1000 kamosmiles
+		tags:smileConverter
+		on tick:yield 5 kamoshicoin
+		on tick:yield -5 kamosmile
+		req:(kamosmile:ps) >= 5
+		req:(kamosmiles:earned) >= 500
+
+	*smileReactor
+		name:Smile reactor|Smile reactors
+		desc:<q>The happiness of the kamoshikas is growing too potent - it has to be canalyzed.</q> <//> <.> Gives 10 kamoshicoin per second at base. <.> Decreases kamosmile income by 8 kamosmiles per second.
+		cost:5000 kamosmiles
+		tags:smileConverter
+		on tick:yield 10 kamoshicoin
+		on tick:yield -8 kamosmile
+		req:(kamosmile:ps) >= 8
+		req:(kamosmiles:earned) >= 2500
 
     *coldMutator
 		name:Cold-mutation
