@@ -25,6 +25,8 @@ left:40%;
 height:100%;
 width:40%;
 position:absolute;
+overflow-y:scroll;
+overflow-x:hidden;
 }
 
 #box-cappynessbox{
