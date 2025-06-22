@@ -42,6 +42,7 @@ Layout
     contains:BulkDisplay, Buildings
     header:Buildings
     tooltip origin:left
+	icons:show
 	ps:show
 
 *cappynessbox
