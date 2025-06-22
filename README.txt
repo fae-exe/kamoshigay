@@ -42,8 +42,8 @@ Layout
     header:Buildings
     tooltip origin:left
 
-*cappynessbox
-    contains:tag:crystals, tag:cappynessres
+*kamosmilesbox
+    contains:tag:crystals, tag:kamosmilesres
     header:GACHA CURRENCIES
 
 *upgradebox
@@ -56,29 +56,29 @@ Layout
 Buttons
     *kamoshiGacha
         name:KAMOSHIGACHA
-        desc:Click to spend capriCrystalS and gain sad caprinae.
+        desc:Click to spend Capricoins and gain sad kamoshikas.
         on click:
-		if (capriCrystals >= 120) 
+		if (capriCoins >= 120) 
 			anim icon wobble
-			lose 120 capriCrystals
+			lose 120 capriCoins
 			do gachagacha
 		end
 	end
 	on gachagacha:
 		if (chance(1%))
-			yield 1 lonelyGoat
+			yield 1 lonelyShika
 		else if (chance(3%))
-			yield 1 angryTahr
+			yield 1 angryShika
 		else if (chance(7%))
-			yield 1 hungryMarkhor
+			yield 1 hungryShika
 		else if (chance(20%))
-			yield 1 sadSerow
+			yield 1 sadShika
 		else
 			yield 1 coldKamoshika
 		end
 	end
 	tags:gachamachine
-	cost:120 capriCrystals
+	cost:120 capriCoins
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/gacha.PNG
         no text
         class:bigButton hasFlares
@@ -86,27 +86,27 @@ Buttons
         tooltip origin:bottom
         tooltip class:red
 
-    *capriCrystalarium
-	name:The Capricrystalarium
-	desc:Click to gain capriCrystalS to spend on the KAMOSHIGACHA.
+    *capriCoinbank
+	name:The Capricoinbank
+	desc:Click to gain Capricoins to spend on the KAMOSHIGACHA.
 	tags:crystals
-	on click:yield 1 capriCrystal
+	on click:yield 1 capriCoin
         
 Resources
-    *capriCrystal|capriCrystals
-        name:Capricrystals
+    *capriCoin|capriCoins
+        name:Capricoin|Capricoins
 	class:bigButton
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
 	show earned
 	tags:crystals
-	on tick:yield 1 capriCrystal
-	on start:yield 120 capriCrystals
+	on tick:yield 1 capriCoin
+	on start:yield 120 capriCoins
 
-    *cappyness
-	name:Cappyness
+    *kamosmile|kamosmiles
+	name:Kamosmile|Kamosmiles
 	icon class:mediumIcon
-	desc:Caprine happiness! You'll earn it every time you send a caprinae for adoption!
+	desc:The happiness from Kamoshikas! You'll earn it by satisfying their needs!
 	icon:icons[3,0]
 	show earned
 	tags:cappynessres
@@ -119,30 +119,30 @@ Resources
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
 	hidden when 0
 
-    *sadSerow|sadSerows
-	name:Sad serow|Sad serows
+    *sadShika|sadShikas
+	name:Sadmoshika|Sadmoshikas
 	icon class:bigIcon
 	tags:caprine, sad
-	desc:These taiwanese serows are sad because they want to play! <//> <b>Rarity:</b> Uncommon.
+	desc:These kamoshikas are sad because they want to play! <//> <b>Rarity:</b> Uncommon.
 	icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/sadserow.PNG
 	hidden when 0
 
-    *hungryMarkhor|hungryMarkhors
-	name:Hungrhor|Hungrhors
+    *hungryShika|hungryShikas
+	name:Hungrishika|Hungrishikas
 	icon class:mediumIcon
 	tags:carpine, hungry
 	desc:These Markhors are always hungry. You could be shoveling grass into them all day long. <//> <b>Rarity:</b> Rare.
 	hidden when 0
 
-    *angryTahr|angryTahrs
-	name:Fulminatahr|Fulminatahrs
+    *angryShika|angryShikas
+	name:Kaboomshika|Kaboomshikas
 	icon class:mediumIcon
 	tags:caprine, angry
 	desc:These tahrs are very angry and need to calm down. Maybe some meditation, or a punching-ball. <//> <b>Rarity:</b> Extra rare.
 	hidden when 0
 
-    *lonelyGoat|lonelyGoats
-	name:Goatlitaire|Goatlitaires
+    *lonelyShika|lonelyShikas
+	name:Kaloneshika|Kaloneshikas
 	icon class:mediumIcon
 	tags:caprine, lonely
 	desc:These mountain goats have lives alone on their big mountains for so long, they want a little company. <//> <b>Rarity:</b> Secret rare.
@@ -154,128 +154,127 @@ Buildings
         
     *heater
         name:Heater
-        desc:Generates a little heat to make your freezing kamoshikas warmer and happier.
-        cost:20 capriCrystals
+        desc:<q>Generates a little heat to make your freezing kamoshikas warmer and happier.</q> <//> <.> Generates [(kamosmiles yield of heater)] kamosmiles per second.
+        cost:20 capriCoins
 	icon class:mediumIcon
-	tags:healcold
-	on tick:yield 0.1*(coldKamoshikas) cappyness
-        req:1 coldKamoshika:earned
         icon:icons[0,1]
+	tags:healcold
+	on tick:yield 0.1*(coldKamoshikas) kamosmiles
+        req:1 coldKamoshika:earned
 
     *bigBlanket
 	name:Big blanket
-	desc:The caprinaes can all huddle under this big blanket for warmth. It is woven from a thread synthesized using cappyness.
-	cost:100 capriCrystals
+	desc:The caprinaes can all huddle under this big blanket for warmth.
 	icon class:mediumIcon
-	tags:healcold
-	on tick:yield 0.2*(coldKamoshikas) cappyness
-	req:10 coldKamoshikas:earned
         icon:icons[0,2]
+	tags:healcold
+	on tick:yield 0.2*(coldKamoshikas) kamosmiles
+	req:10 coldKamoshikas:earned
 
     *toyBox
 	name:Toy box
 	desc:For a fleeting moment, the sad serows will be very happy to have toys to play with.
-	cost:30 capriCrystals
+	cost:30 capriCoins
 	icon class:mediumIcon
-	tags:healsad
-	on tick:yield 0.2*(sadSerows) cappyness
-	req:1 sadSerow:earned
         icon:icons[0,3]
+	tags:healsad
+	on tick:yield 0.2*(sadShikas) kamosmiles
+	req:1 sadShika:earned
 
     *goatMovies
 	name:Goat movies
 	desc:This goat-cinema will allow your serows to enjoy fun movies together, distracting them from the pain of existence.
-	cost:200 capriCrystals
+	cost:200 capriCoins
 	icon class:mediumIcon
-	tags:healsad
-	on tick:yield 0.4*(sadSerows) cappyness
-	req:10 sadSerows:earned
         icon:icons[0,4]
+	tags:healsad
+	on tick:yield 0.4*(sadShikas) kamosmiles
+	req:10 sadShikas:earned
 
     *grassPatch
         name:Grass patch
         desc:Grow some grass to feed your hungry markhors! But this will not satiate them for long.
-        cost:40 capriCrystals
+        cost:40 capriCoins
 	icon class:mediumIcon
-	tags:healhungry
-	on tick:yield 0.5*(hungryMarkhors) cappyness
-        req:1 hungryMarkhor:earned
         icon:icons[0,5]
+	tags:healhungry
+	on tick:yield 0.5*(hungryShikas) kamosmiles
+        req:1 hungryShika:earned
 
     *foodDelivery
         name:Food delivery
-        desc:Get some food delivered directly to your goatstep! Shovel that right into the Markhor's mouth.
-        cost:500 capriCrystals
+        desc:Get some food delivered directly to your goatstep! Shovel that right into the Shika's mouth.
+        cost:500 capriCoins
 	icon class:mediumIcon
-	tags:healhungry
-	on tick:yield 4*(hungryMarkhors) cappyness
-        req:10 hungryMarkhor:earned
         icon:icons[0,6]
+	tags:healhungry
+	on tick:yield 4*(hungryShikas) kamosmiles
+        req:10 hungryShika:earned
 
     *punchingBag
         name:Punching bag
         desc:A punching (well more like headbutting) bag so your angriest goats can take it out on something.
-        cost:50 capriCrystals
+        cost:50 capriCoins
 	icon class:mediumIcon
 	tags:healangry
-	on tick:yield 1*(angryTahrs) cappyness
-        req:1 angryTahr:earned
+	on tick:yield 1*(angryShikas) kamosmiles
+        req:1 angryShika:earned
         icon:icons[0,7]
 
     *meditationWaterfall
 	name:Meditation waterfall
 	desc:A gorgeous waterfall that your tahrs can soak under while reflecting on the futile aspects of rage and the power of love.
-	cost:800 capriCrystals
+	cost:800 capriCoins
 	icon class:mediumIcon
 	tags:healangry
-	on tick:yield 10*(angryTahrs) cappyness
-        req:1 angryTahr:earned
+	on tick:yield 10*(angryShikas) kamosmiles
+        req:1 angryShika:earned
         icon:icons[0,8]
 
     *headscritchDispenser
         name:Headscritch dispenser
         desc:A nice headscratch dispenser to help your loneliest goat feel a little loved.
-        cost:100 capriCrystals
+        cost:100 capriCoins
 	icon class:mediumIcon
 	tags:heallonely
-	on tick:yield 5*(lonelyGoats) cappyness
-        req:1 lonelyGoat:earned
+	on tick:yield 5*(lonelyShikas) kamosmiles
+        req:1 lonelyShika:earned
         icon:icons[0,9]
 
     *playPen
 	name:Play pen
 	desc:A play pen for both your goatlitaires and your sad serows! Playing together means being together!
-	cost:1000 capriCrystals
+	cost:1000 capriCoins
 	icon class:mediumIcon
 	tags:heallonely, healsad
-	on tick:yield (20*(lonelyGoats) + 0.5*(sadSerows)) cappyness
-	req:2 lonelyGoat:earned
-	req:20 sadSerows:earned
+	on tick:yield (20*(lonelyShikas) + 0.5*(sadShikas)) kamosmiles
+	req:2 lonelyShika:earned
+	req:20 sadShikas:earned
         icon:icons[0,10]
 
     *coldExplorer
 	name:Train a cold explorer
-	desc:Gives very heavy coats to a kamoshikas so they can face their fear and explore the wilds in search of Capricrystals!
-	cost:100 capriCrystals, 1 coldKamoshika
+	desc:Gives very heavy coats to a kamoshikas so they can face their fear and explore the wilds in search of capriCoins!
+	cost:100 capriCoins, 1 coldKamoshika
 	tags:job
-	on tick:yield 0.5 capriCrystal
+	on tick:yield 0.5 capriCoin
 	cost increase:200%
 	req:5 coldKamoshikas:earned
 
     *goatRescuer
 	name:Train a serow rescuer
 	desc:Gives helicopters and pilot licenses to your sad serows. The fulfillment of saving kamoshikas from the cold distracts them from their awful sadness.
-	cost:250 capriCrystals, 1 sadSerow
+	cost:250 capriCoins, 1 sadShika
 	tags:job
 	on tick:yield 0.02 coldKamoshika
 	cost increase:200%
-	req:5 sadSerow:earned
+	req:5 sadShika:earned
 
     *coldMutator
 	name:Cold-mutation
 	desc:This process can distillate 5 cold kamoshita into a sad serow, taking the cold from <i>outside</i> the goats and concentrating it within a single goat.
-	cost:5 coldKamoshita, 500 capriCrystals
+	cost:5 coldKamoshita, 500 capriCoins
 	tags:transmutation
-	on earn:yield 1 sadSerow
-	req:1 sadSerow
+	on earn:yield 1 sadShika
+	req:1 sadShika
 	cost increase:100%
