@@ -124,7 +124,7 @@ Resources
 	icon class:bigIcon
 	tags:caprine, sad
 	desc:These taiwanese serows are sad because they want to play! <//> <b>Rarity:</b> Uncommon.
-	icon:https://upload.wikimedia.org/wikipedia/commons/1/16/%E9%95%B7%E9%AC%83%E5%B1%B1%E7%BE%8A.jpg
+	icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/sadserow.PNG
 	hidden when 0
 
     *hungryMarkhor|hungryMarkhors
