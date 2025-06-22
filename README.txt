@@ -213,7 +213,7 @@ Buildings
         cost:500 capriCoins
 		icon class:mediumIcon
         icon:icons[0,6]
-		tags:healhungry
+		tags:healhungry, restaurant
 		on tick:yield 4*(hungryShikas) kamosmiles
         req:10 hungryShika:earned
 
@@ -258,8 +258,41 @@ Buildings
 		req:20 sadShikas:earned
         icon:icons[0,10]
 
+	*kamoshiKhebab
+		name:Kamoshi-khebab
+		desc:<q>A cool comfort food chain for kamoshikas. The khebabs are vegetarian.</q>
+		cost:5000 capriCoins
+		icon class:mediumIcon
+		tags:heallonely, healhungry, restaurant
+		on tick:yield (20*(angryShikas) + 1*(sadShikas)) kamosmiles
+		req:5 angryShikas:earned
+		req:40 sadShikas:earned
+        icon:icons[0,10]
+
+	*gourmetRestaurant
+		name:Gourmet restaurant
+		desc:<q>A fine dining establishment kamoshikas can go to in order to eat and enjoy the company.</q>
+		cost:20000 capriCoins
+		icon class:mediumIcon
+		tags:heallonely, healhungry, restaurant
+		on tick:yield (100*(lonelyShikas) + 40*(angryShikas)) kamosmiles
+		req:4 lonelyShikas:earned
+		req:10 angryShikas:earned
+        icon:icons[0,10]
+
+	*kamoshiRevue
+		name:Kamoshi-revue|Kamoshi-revues
+		desc:<q>A special revue kamoshikas can go to to watch kamoshidrag shows.</q>
+		cost:10000 capriCoins
+		icon class:mediumIcon
+		tags:heallonely, healsad
+		on tick:yield (50*(lonelyShikas) + 2*(sadShikas)) kamosmiles
+		req:3 lonelyShika:earned
+		req:40 sadShikas:earned
+        icon:icons[0,10]
+
     *coldExplorer
-		name:Train a cold explorer
+		name:Train cold explorers
 		desc:Gives very heavy coats to a kamoshikas so they can face their fear and explore the wilds in search of capricoins!
 		cost:100 capriCoins, 1 coldKamoshika
 		tags:job
@@ -268,8 +301,8 @@ Buildings
 		req:5 coldKamoshikas:earned
 
     *goatRescuer
-		name:Train a serow rescuer
-		desc:Gives helicopters and pilot licenses to your sad serows. The fulfillment of saving kamoshikas from the cold distracts them from their awful sadness.
+		name:Train shika rescuers
+		desc:<q>Gives helicopters and pilot licenses to your sad kamoshikas. The fulfillment of saving kamoshikas from the cold distracts them from their awful sadness.</q>
 		cost:250 capriCoins, 1 sadShika
 		tags:job
 		on tick:yield 0.02 coldKamoshika
@@ -295,14 +328,6 @@ Buildings
 		on tick:yield -2 kamosmile
 		req:(kamosmile:ps) >= 2
 		req:(kamosmiles:earned) >= 50
-
-	*kamoshiRevue
-		name:Kamoshi-revue|Kamoshi-revues
-		desc:<q>A special revue kamoshikas can go to to watch kamoshidrag shows.</q>
-
-	*gourmetRestaurant
-		name:Gourmet restaurant
-		desc:<q>A fine dining establishment kamoshikas can go to in order to eat and enjoy the company.</q>
 	
 	*wishResonator
 		name:Wish resonator|Wish resonators
