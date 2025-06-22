@@ -394,7 +394,7 @@ Buildings
 		desc:<q>A machine that will insert kamoshicoin into the kamoshigacha for you! You don't need to pull manually anymore!</q> <//> <.> Spends 120 kamoshicoin every second to pull from the gacha machine.
 		cost:1000 capriCoins
 		on tick:yield -120 capriCoins
-		on tick:kamoshigacha do gachagacha
+		on tick:do gachagacha with kamoshigacha
 
 Upgrades
     *TEMPLATE
