@@ -8,7 +8,7 @@ Let's make a game!
 
 Settings
     background:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/background.PNG
-    stylesheet:https://pastebin.com/raw/WsB6rxdr
+    stylesheet:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/stylesheet.txt
     building cost increase:115%
     building cost refund:50%
     stylesheet:stuff/bigBlue.css
