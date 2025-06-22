@@ -111,7 +111,7 @@ Resources
 		desc:The happiness from Kamoshikas! You'll earn it by satisfying their needs!
 		icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
 		show earned
-		tags:cappynessres
+		tags:kamosmilesres
 
     *coldKamoshika|coldKamoshikas
         name:Kamoshiglace|Kamoshiglaces
