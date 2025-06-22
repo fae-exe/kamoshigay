@@ -95,7 +95,7 @@ Buttons
 Resources
     *capriCrystal|capriCrystals
         name:Capricrystals
-	icon class:bigButton
+	class:bigButton
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
 	show earned
