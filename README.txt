@@ -105,6 +105,8 @@ Resources
 		tags:crystals
 		on tick:yield 1 capriCoin
 		on start:yield 120 capriCoins
+		class:bigButton hasFlares
+		on click:yield 1 capriCoin
 
     *kamosmile|kamosmiles
 		name:Kamosmile|Kamosmiles
