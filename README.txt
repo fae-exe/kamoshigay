@@ -27,7 +27,7 @@ Layout
 	contains:tag:cold
 
 *sadbox
-    	contains:tag:sad
+    contains:tag:sad
 
 *hungrybox
 	contains:tag:hungry
@@ -346,6 +346,7 @@ Buildings
 		tags:smileConverter
 		on tick:yield 10 capriCoin
 		on tick:yield -8 kamosmile
+		on earn: show this
 		req:(kamosmile:ps) >= 8
 		req:(kamosmiles:earned) >= 2500
 
