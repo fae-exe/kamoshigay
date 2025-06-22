@@ -409,5 +409,5 @@ Upgrades
         icon:icons[1,1]
         cost:100 kamosmiles
         passive:multiply kamosmile yield of heater by 2
-        req:10 heater:owned
+        req:10 heater:earned
 	
