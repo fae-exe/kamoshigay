@@ -41,30 +41,32 @@ width:20%;
 height:50%;
 }
 
+
 .thing.bigButton
 {
-    height:100%;
+	background-size:contain;
+	height:100%;
     background-repeat: no-repeat;
 }
 
-.bigIcon
+.kamoIcon
 {
-    height:100%;
-    width:100%;
-    background-size:100%;
-    position:relative;
+    background-size: contain;
+	background-repeat: no-repeat;
 }
 
-.medIcon
+.cold
 {
-   height:4000px;
-   width:4000px;
-   position:absolute;
-   left:20%;
-   top:20%;
+font-size:120%;
+height:20%;
+background-color:rgb(50, 168, 226);
 }
 
 
-
-
+.sad
+{
+font-size:120%;
+height:20%;
+background-color:rgb(153, 132, 204);
+}
 

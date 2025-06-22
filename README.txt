@@ -8,10 +8,9 @@ Let's make a game!
 
 Settings
     background:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/background.PNG
-    stylesheet:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/stylesheet.txt
+    stylesheet:https://pastebin.com/raw/WsB6rxdr
     building cost increase:115%
     building cost refund:50%
-    spritesheet:icons, 48 by 48, https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/icon-spritesheet.png
     stylesheet:stuff/bigBlue.css
 
 Layout
@@ -23,6 +22,7 @@ Layout
     contains:coldbox, sadbox, hungrybox, lonelybox, angrybox
 
 *coldbox
+	icons:show
 	contains:tag:cold
 
 *sadbox
@@ -95,10 +95,10 @@ Buttons
 Resources
     *capriCoin|capriCoins
         name:Capricoin|Capricoins
-	class:bigButton
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
 	show earned
+	icon class:kamoIcon
 	tags:crystals
 	on tick:yield 1 capriCoin
 	on start:yield 120 capriCoins
@@ -107,13 +107,14 @@ Resources
 	name:Kamosmile|Kamosmiles
 	icon class:mediumIcon
 	desc:The happiness from Kamoshikas! You'll earn it by satisfying their needs!
-	icon:icons[3,0]
+	icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
 	show earned
 	tags:cappynessres
 
     *coldKamoshika|coldKamoshikas
         name:Kamoshiglace|Kamoshiglaces
-	icon class:bigIcon
+	class:cold
+	icon class:kamoIcon
 	tags:caprine, cold
         desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> <b>Rarity:</b> Common.
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
@@ -121,7 +122,8 @@ Resources
 
     *sadShika|sadShikas
 	name:Sadmoshika|Sadmoshikas
-	icon class:bigIcon
+	class:sad
+	icon class:kamoIcon
 	tags:caprine, sad
 	desc:These kamoshikas are sad because they want to play! <//> <b>Rarity:</b> Uncommon.
 	icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/sadserow.PNG
@@ -129,21 +131,21 @@ Resources
 
     *hungryShika|hungryShikas
 	name:Hungrishika|Hungrishikas
-	icon class:mediumIcon
+	icon class:kamoIcon
 	tags:carpine, hungry
-	desc:These Markhors are always hungry. You could be shoveling grass into them all day long. <//> <b>Rarity:</b> Rare.
+	desc:These kamoshikas are always hungry. You could be shoveling grass into them all day long. <//> <b>Rarity:</b> Rare.
 	hidden when 0
 
     *angryShika|angryShikas
 	name:Kaboomshika|Kaboomshikas
-	icon class:mediumIcon
+	icon class:kamoIcon
 	tags:caprine, angry
-	desc:These tahrs are very angry and need to calm down. Maybe some meditation, or a punching-ball. <//> <b>Rarity:</b> Extra rare.
+	desc:These kamoshikas are very angry and need to calm down. Maybe some meditation, or a punching-ball. <//> <b>Rarity:</b> Extra rare.
 	hidden when 0
 
     *lonelyShika|lonelyShikas
 	name:Kaloneshika|Kaloneshikas
-	icon class:mediumIcon
+	icon class:kamoIcon
 	tags:caprine, lonely
 	desc:These mountain goats have lives alone on their big mountains for so long, they want a little company. <//> <b>Rarity:</b> Secret rare.
 	hidden when 0
@@ -157,6 +159,7 @@ Buildings
         desc:<q>Generates a little heat to make your freezing kamoshikas warmer and happier.</q> <//> <.> Generates [(kamosmiles yield of heater)] kamosmiles per second.
         cost:20 capriCoins
 	icon class:mediumIcon
+		class:cold
         icon:icons[0,1]
 	tags:healcold
 	on tick:yield 0.1*(coldKamoshikas) kamosmiles
@@ -164,8 +167,9 @@ Buildings
 
     *bigBlanket
 	name:Big blanket
-	desc:The caprinaes can all huddle under this big blanket for warmth.
+	desc:The kamoshikas can all huddle under this big blanket for warmth.
 	icon class:mediumIcon
+		class:cold
         icon:icons[0,2]
 	tags:healcold
 	on tick:yield 0.2*(coldKamoshikas) kamosmiles
