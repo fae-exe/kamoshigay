@@ -160,7 +160,6 @@ Buildings
         name:Heater
         desc:<q>Generates a little heat to make your freezing kamoshikas warmer and happier.</q> <//> <.> Generates <b>0.1 kamosmile</b> per <b>kamoshiglace</b> per second.
         cost:20 capriCoins
-		icon class:kamoIcon
 		class:cold
         icon:icons[0,1]
 		tags:healcold
@@ -171,7 +170,6 @@ Buildings
 		name:Big blanket
 		desc:<q>The kamoshikas can all huddle under this big blanket for warmth.</q> <//> <.> Generates <b>0.2 kamosmile</b> per <b>kamoshiglace</b> per second.
         cost:100 capriCoins
-		icon class:kamoIcon
 		class:cold
         icon:icons[0,2]
 		tags:healcold
@@ -182,7 +180,6 @@ Buildings
 		name:Toy box
 		desc:<q>For a fleeting moment, the sadmoshikas will be very happy to have toys to play with.</q> <//> <.> Generates <b>0.2 kamosmile</b> per <b>sadmoshikas</b> per second.
 		cost:30 capriCoins
-		icon class:kamoIcon
         icon:icons[0,3]
 		tags:healsad
 		on tick:yield 0.2*(sadShikas) kamosmiles
@@ -192,7 +189,6 @@ Buildings
 		name:Goat movies
 		desc:<q>This goat-cinema will allow your serows to enjoy fun movies together, distracting them from the pain of existence.</q> <//> <.> Generates <b>0.4 kamosmile</b> per <b>sadmoshikas</b> per second.
 		cost:200 capriCoins
-		icon class:kamoIcon
         icon:icons[0,4]
 		tags:healsad
 		on tick:yield 0.4*(sadShikas) kamosmiles
@@ -202,7 +198,6 @@ Buildings
         name:Grass patch
         desc:<q>Grow some grass to feed your hungrishikas! But this will not satiate them for long.</q> <//> <.> Generates <b>0.5 kamosmile</b> per <b>sadmoshikas</b> per second.
         cost:40 capriCoins
-		icon class:mediumIcon
         icon:icons[0,5]
 		tags:healhungry
 		on tick:yield 1*(hungryShikas) kamosmiles
@@ -212,7 +207,6 @@ Buildings
         name:Food delivery
         desc:<q>Get some food delivered directly to your goatstep! Shovel that right into the shikas' mouths.</q> <//> <.> Generates <b>4 kamosmile</b> per <b>hungrishika</b> per second.
         cost:500 capriCoins
-		icon class:kamoIcon
         icon:icons[0,6]
 		tags:healhungry, restaurant
 		on tick:yield 5*(hungryShikas) kamosmiles
@@ -222,7 +216,6 @@ Buildings
         name:Punching bag
         desc:<q>A punching (well more like headbutting) bag so your angriest goats can take it out on something.</q> <//> <.> Generates <b>5 kamosmile</b> per <b>kaboomshika</b> per second.
         cost:50 capriCoins
-		icon class:kamoIcon
 		tags:healangry
 		on tick:yield 5*(angryShikas) kamosmiles
         req:1 angryShika:earned
@@ -232,7 +225,6 @@ Buildings
 		name:Meditation waterfall
 		desc:<q>A gorgeous waterfall that your tahrs can soak under while reflecting on the futile aspects of rage and the power of love.</q> <//> <.> Generates <b>25 kamosmile</b> per <b>kaboomshika</b> per second.
 		cost:800 capriCoins
-		icon class:kamoIcon
 		tags:healangry
 		on tick:yield 25*(angryShikas) kamosmiles
         req:10 grassPatch
@@ -242,7 +234,6 @@ Buildings
         name:Headscritch dispenser
         desc:<q>A nice headscratch dispenser to help your loneliest kamoshikas feel a little loved.</q> <//> <.> Generates <b>10 kamosmile</b> per <b>kaloneshika</b> per second.
         cost:100 capriCoins
-		icon class:kamoIcon
 		tags:heallonely
 		on tick:yield 10*(lonelyShikas) kamosmiles
         req:1 lonelyShika:earned
@@ -252,7 +243,6 @@ Buildings
 		name:Play pen
 		desc:A play pen for both your goatlitaires and your sad serows! Playing together means being together! <//> <.> Generates <b>0.5 kamosmile</b> per <b>sadmoshika</b> per second. <.> Generates <b>20 kamosmile</b> per <b>kaloneshika</b> per second.
 		cost:1000 capriCoins
-		icon class:kamoIcon
 		tags:heallonely, healsad
 		on tick:yield (20*(lonelyShikas) + 0.5*(sadShikas)) kamosmiles
 		req:2 lonelyShika:earned
@@ -263,7 +253,6 @@ Buildings
 		name:Kamoshi-khebab
 		desc:<q>A cool comfort food chain for kamoshikas. The khebabs are vegetarian.</q>
 		cost:5000 capriCoins
-		icon class:kamoIcon
 		tags:heallonely, healhungry, restaurant
 		on tick:yield (20*(angryShikas) + 1*(sadShikas)) kamosmiles
 		req:5 angryShikas:earned
@@ -275,7 +264,6 @@ Buildings
 		name:Gourmet restaurant
 		desc:<q>A fine dining establishment kamoshikas can go to in order to eat and enjoy the company.</q>
 		cost:20000 capriCoins
-		icon class:kamoIcon
 		tags:heallonely, healhungry, restaurant
 		on tick:yield (100*(lonelyShikas) + 40*(angryShikas)) kamosmiles
 		req:4 lonelyShikas:earned
