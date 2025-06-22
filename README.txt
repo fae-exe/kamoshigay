@@ -44,7 +44,7 @@ Layout
     tooltip origin:left
 	ps:show
 
-*kamosmilesbox
+*cappynessbox
     contains:tag:crystals, tag:kamosmilesres
     header:GACHA CURRENCIES
 
