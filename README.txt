@@ -48,7 +48,7 @@ Layout
 *buildingBox
 	contains:healingBox, jobBox, smileConversionBox
 	*healingBox
-		contains:tag:healangry, healcold, healhungry, heallonely, healsad
+		contains:tag:healangry, tag:healcold, tag:healhungry, tag:heallonely, tag:healsad
     		header:Make your kamoshikas feel better :'(
     		tooltip origin:left
 		icons:show
