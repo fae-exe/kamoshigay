@@ -105,34 +105,38 @@ Buttons
         tooltip class:red
 	show earned
 
-    *capriCoin|capriCoins
+    *capriCoinButton
         name:Capricoin|Capricoins
 	class:bigButton hasFlares
-        desc:Fell from heaven with the KAMOSHIGACHA MACHINE. Click to gain Capricoins to spend on the KAMOSHIGACHA. You can spend those on the KAMOSHIGACHA. (And some other things.)
+        desc:Fell from heaven with the KAMOSHIGACHA MACHINE. Click to gain Capricoins to spend on the KAMOSHIGACHA. 
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
-	show earned
 	icon class:kamoIcon
 	tags:coins
-	on tick:yield 1 capriCoin
 	on start:yield 120 capriCoins
 	on click:yield 1 capriCoin
 
-        
 Resources
 
+    *capriCoin|capriCoins
+	name:The Capricoinbank
+	desc:You can spend those on the KAMOSHIGACHA. (And some other things.)
+	tags:coins
+	on tick:yield 1 capriCoin
+	show earned
+
     *kamosmile|kamosmiles
-		name:Kamosmile|Kamosmiles
-		icon class:mediumIcon
-		desc:The happiness from Kamoshikas! You'll earn it by satisfying their needs!
-		icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
-		show earned
-		tags:kamosmilesres
+	name:Kamosmile|Kamosmiles
+	icon class:mediumIcon
+	desc:The happiness from Kamoshikas! You'll earn it by satisfying their needs!
+	tags:kamosmilesres
+	icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
+	show earned
 
     *coldKamoshika|coldKamoshikas
         name:Kamoshiglace|Kamoshiglaces
-		class:cold
-		icon class:kamoIcon
-		tags:caprine, cold
+	class:cold
+	icon class:kamoIcon
+	tags:caprine, cold
         desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> <b>Rarity:</b> Common.
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
 		hidden when 0
