@@ -1,9 +1,15 @@
 #box-buttonsBox{
-top: 40%;
+top: 0%;
 left: 0%;
 width:20%;
 position: absolute;
 height: 100%;
+}
+
+.thing.bigButton
+{
+	background-size:contain;
+    background-repeat: no-repeat;
 }
 
 #box-kamoshikaBox{
@@ -19,14 +25,27 @@ height: 20%;
 position: relative;
 }
 
-#box-buildingBox{
-top:0%;
+#box-healingBox, #box-jobBox, #box-smileConversionBox{
 left:40%;
-height:100%;
 width:40%;
 position:absolute;
 overflow-y:scroll;
 overflow-x:hidden;
+}
+
+#box-healingBox{
+top:0%;
+height:40%
+}
+
+#box-jobBox{
+top:40%;
+height:40%;
+}
+
+#box-smileConversionBox{
+top:80%;
+height:20%;
 }
 
 #box-cappynessBox{
@@ -41,14 +60,6 @@ top:50%;
 left:80%;
 width:20%;
 height:50%;
-}
-
-
-.thing.bigButton
-{
-	background-size:contain;
-	height:100%;
-    background-repeat: no-repeat;
 }
 
 .kamoIcon
@@ -126,4 +137,16 @@ background-color:rgb(120, 120, 120);
 }
 
 
+.box-header, .tag-menuheader {
+	background:rgb(203, 120, 74);
+	border:none;
+	border-top-left-radius:0px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	margin-bottom:4px;
+	font-size:16px;
+	color:rgb(137, 39, 9);
+	cursor:default;
+}
 
