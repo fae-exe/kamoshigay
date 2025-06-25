@@ -56,7 +56,7 @@ Layout
 	*jobBox
 		contains:tag:job
 		header:Put them to work???
-	*smileconversionBox
+	*smileConversionBox
 		contains:tag:smileConverter
 		header:Wait you can do that??????
 
