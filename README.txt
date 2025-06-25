@@ -15,27 +15,35 @@ Settings
     stylesheet:stuff/bigBlue.css
 
 Layout
-*gachaBox
-    contains:tag:gachamachine
+
+*buttonsBox
+	contains: coinBox, gachaBox
+
+	*coinBox
+		contains:tag:coins
+
+	*gachaBox
+    		contains:tag:gachamachine
+
 
 *kamoshikaBox
     header:KAMOSHIKAS
     contains:coldBox, sadBox, hungryBox, lonelyBox, angryBox
 
-*coldBox
-	contains:tag:cold
-
-*sadBox
-	contains:tag:sad
-
-*hungryBox
-	contains:tag:hungry
-
-*lonelyBox
-	contains:tag:lonely
-
-*angryBox
-	contains:tag:angry
+	*coldBox
+		contains:tag:cold
+	
+	*sadBox
+		contains:tag:sad
+	
+	*hungryBox
+		contains:tag:hungry
+	
+	*lonelyBox
+		contains:tag:lonely
+	
+	*angryBox
+		contains:tag:angry
 
 *buildingBox
 	contains:healingBox, jobBox, smileConversionBox
@@ -95,25 +103,22 @@ Buttons
         icon class:shadowed
         tooltip origin:bottom
         tooltip class:red
+	show earned
 
-    *capriCoinbank
-		name:The Capricoinbank
-		desc:Click to gain Capricoins to spend on the KAMOSHIGACHA.
-		tags:crystals
-		on click:yield 1 capriCoin
-        
-Resources
     *capriCoin|capriCoins
         name:Capricoin|Capricoins
-        desc:Fell from heaven with the KAMOSHIGACHA MACHINE. You can spend those on the KAMOSHIGACHA. (And some other things.)
+	class:bigButton hasFlares
+        desc:Fell from heaven with the KAMOSHIGACHA MACHINE. Click to gain Capricoins to spend on the KAMOSHIGACHA. You can spend those on the KAMOSHIGACHA. (And some other things.)
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
-		show earned
-		icon class:kamoIcon
-		tags:crystals
-		on tick:yield 1 capriCoin
-		on start:yield 120 capriCoins
-		class:bigButton hasFlares
-		on click:yield 1 capriCoin
+	show earned
+	icon class:kamoIcon
+	tags:coins
+	on tick:yield 1 capriCoin
+	on start:yield 120 capriCoins
+	on click:yield 1 capriCoin
+
+        
+Resources
 
     *kamosmile|kamosmiles
 		name:Kamosmile|Kamosmiles
