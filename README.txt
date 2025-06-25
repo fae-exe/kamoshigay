@@ -25,7 +25,6 @@ Layout
 	*gachaBox
     		contains:tag:gachamachine
 
-
 *kamoshikaBox
     header:KAMOSHIKAS
     contains:coldBox, sadBox, hungryBox, lonelyBox, angryBox
@@ -45,18 +44,16 @@ Layout
 	*angryBox
 		contains:tag:angry
 
-*buildingBox
-	contains:healingBox, jobBox, smileConversionBox
-	*healingBox
+*healingBox
 		contains:tag:healangry, tag:healcold, tag:healhungry, tag:heallonely, tag:healsad
     		header:Make your kamoshikas feel better :'(
     		tooltip origin:left
 		icons:show
 		ps:show
-	*jobBox
+*jobBox
 		contains:tag:job
 		header:Put them to work???
-	*smileConversionBox
+*smileConversionBox
 		contains:tag:smileConverter
 		header:Wait you can do that??????
 
@@ -444,4 +441,3 @@ Upgrades
         cost:100 kamosmiles
         passive:multiply kamosmile yield of heater by 2
         req:10 heater
-	
