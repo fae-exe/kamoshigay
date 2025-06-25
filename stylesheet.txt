@@ -1,12 +1,12 @@
-#box-gachabox{
-top: 0%;
+#box-buttonsBox{
+top: 40%;
 left: 0%;
 width:20%;
 position: absolute;
 height: 100%;
 }
 
-#box-kamoshikabox{
+#box-kamoshikaBox{
 top: 0%;
 left:20%;
 width:20%;
@@ -14,12 +14,12 @@ position: absolute;
 height:100%;
 }
 
-#box-sadbox, #box-coldbox{
+#box-sadBox, #box-coldBox, #box-angryBox, #box-lonelyBox, #box-hungryBox{
 height: 20%;
 position: relative;
 }
 
-#box-buildingbox{
+#box-buildingBox{
 top:0%;
 left:40%;
 height:100%;
@@ -29,14 +29,14 @@ overflow-y:scroll;
 overflow-x:hidden;
 }
 
-#box-cappynessbox{
+#box-cappynessBox{
 top:0%;
 left:80%;
 width:20%;
 height:50%;
 }
 
-#box-upgradebox{
+#box-upgradeBox{
 top:50%;
 left:80%;
 width:20%;
@@ -57,6 +57,13 @@ height:50%;
 	background-repeat: no-repeat;
 }
 
+.angry
+{
+font-size:120%;
+height:20%;
+background-color:rgb(199, 79, 79);
+}
+
 .cold
 {
 font-size:120%;
@@ -64,11 +71,59 @@ height:20%;
 background-color:rgb(50, 168, 226);
 }
 
+.hungry
+{
+font-size:120%;
+height:20%;
+background-color:rgb(127, 167, 98);
+}
 
-.sad
+.lonely
 {
 font-size:120%;
 height:20%;
 background-color:rgb(153, 132, 204);
 }
+
+
+.sad
+{
+font-size:120%;
+height:20%;
+background-color:rgb(58, 66, 144);
+}
+
+
+.hungrysad
+{
+font-size:120%;
+height:20%;
+background-color:rgb(120, 120, 120);
+}
+
+
+.hungrylonely
+{
+font-size:120%;
+height:20%;
+background-color:rgb(120, 120, 120);
+}
+
+
+.lonelysad
+{
+font-size:120%;
+height:20%;
+background-color:rgb(120, 120, 120);
+}
+
+
+.angrylonelysad
+{
+font-size:120%;
+height:20%;
+background-color:rgb(120, 120, 120);
+}
+
+
 
