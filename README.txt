@@ -2,8 +2,8 @@ Let's make a game!
     name:Fairy Shelter for Cutiepie Comfort & Rescue
     by:fae.exe & Alyyyd
     desc:Alid was bored so we made a game.<//>Make cute crying critters happy.
-    created:25/7/2017
-    updated:24/10/2017
+    created:21/6/2025
+    updated:26/6/2025
     version:1
 
 Settings
@@ -320,7 +320,7 @@ Buildings
 
     *mentalHealthCenter
 	name:Mental health center|Mental health centers
-	class: angrylonelysad
+	class:angrylonelysad
 	desc:<q>An extensive care facility to help kamoshikas struggling with mental health issues.</q> <//> <.> Generates kamosmiles for each of your sad, angry, and lonely kamoshikas.
 	cost:20000 capriCoins
 	icon class:mediumIcon
