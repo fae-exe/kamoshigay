@@ -15,41 +15,48 @@ Settings
     stylesheet:stuff/bigBlue.css
 
 Layout
-*gachabox
+*gachaBox
     contains:tag:gachamachine
 
-*kamoshikabox
+*kamoshikaBox
     header:KAMOSHIKAS
-    contains:coldbox, sadbox, hungrybox, lonelybox, angrybox
+    contains:coldBox, sadBox, hungryBox, lonelyBox, angryBox
 
-*coldbox
-	icons:show
+*coldBox
 	contains:tag:cold
 
-*sadbox
-    contains:tag:sad
+*sadBox
+	contains:tag:sad
 
-*hungrybox
+*hungryBox
 	contains:tag:hungry
 
-*lonelybox
+*lonelyBox
 	contains:tag:lonely
 
-*angrybox
+*angryBox
 	contains:tag:angry
 
-*buildingbox
-    contains:BulkDisplay, Buildings
-    header:Buildings
-    tooltip origin:left
-	icons:show
-	ps:show
+*buildingBox
+	contains:healingBox, jobBox, smileConversionBox
+	*healingBox
+		contains:tag:healangry, healcold, healhungry, heallonely, healsad
+    		header:Make your kamoshikas feel better :'(
+    		tooltip origin:left
+		icons:show
+		ps:show
+	*jobBox
+		contains:tag:job
+		header:Put them to work???
+	*smileconversionBox
+		contains:tag:smileConverter
+		header:Wait you can do that??????
 
-*cappynessbox
+*cappynessBox
     contains:tag:crystals, tag:kamosmilesres
     header:GACHA CURRENCIES
 
-*upgradebox
+*upgradeBox
     contains:Upgrades
     header:Upgrades
     costs:hide
@@ -257,7 +264,7 @@ Buildings
 
     *playPen
 	name:Play pen
-	class:hungrysad, sad, hungry
+	class:hungrysad
 	desc:A play pen for both your kaloneshikas and your sadshikas! Playing together means being together! <//> <.> Generates <b>0.5 kamosmile</b> per <b>sadmoshika</b> per second. <.> Generates <b>20 kamosmile</b> per <b>kaloneshika</b> per second.
 	cost:1000 capriCoins
 	tags:heallonely, healsad
@@ -268,7 +275,7 @@ Buildings
 
     *kamoshiKhebab
 	name:Kamoshi-khebab
-	class:hungrysad, sad, hungry
+	class:hungrysad
 	desc:<q>A cool comfort food chain for kamoshikas. The kebabs are vegetarian.</q>
 	cost:5000 capriCoins
 	tags:heallonely, healhungry, restaurant
@@ -280,7 +287,7 @@ Buildings
 
     *gourmetRestaurant
 	name:Gourmet restaurant
-	class:lonely, hungry, hungrylonely
+	class:hungrylonely
 	desc:<q>A fine dining establishment kamoshikas can go to in order to eat and enjoy the company.</q>
 	cost:20000 capriCoins
 	tags:heallonely, healhungry, restaurant
@@ -292,7 +299,7 @@ Buildings
 
     *kamoshiRevue
 	name:Kamoshi-revue|Kamoshi-revues
-	class: lonely, sad, lonelysad
+	class: lonelysad
 	desc:<q>A special revue kamoshikas can go to to watch kamoshidrag shows.</q>
 	cost:10000 capriCoins
 	icon class:kamoIcon
@@ -304,7 +311,7 @@ Buildings
 
     *mentalHealthCenter
 	name:Mental health center|Mental health centers
-	class: angry, lonely, sad, angrylonelysad
+	class: angrylonelysad
 	desc:<q>An extensive care facility to help kamoshikas struggling with mental health issues.</q> <//> <.> Generates kamosmiles for each of your sad, angry, and lonely kamoshikas.
 	cost:20000 capriCoins
 	icon class:mediumIcon
