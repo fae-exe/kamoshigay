@@ -17,7 +17,7 @@ Settings
 Layout
 
 *buttonsBox
-	contains: coinBox, gachaBox
+	contains:coinBox, gachaBox
 
 	*coinBox
 		contains:tag:coins
