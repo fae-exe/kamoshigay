@@ -308,7 +308,7 @@ Buildings
 
     *kamoshiRevue
 	name:Kamoshi-revue|Kamoshi-revues
-	class: lonelysad
+	class:lonelysad
 	desc:<q>A special revue kamoshikas can go to to watch kamoshidrag shows.</q>
 	cost:10000 capriCoins
 	icon class:kamoIcon
