@@ -103,7 +103,6 @@ Buttons
         icon class:shadowed
         tooltip origin:bottom
         tooltip class:red
-	show earned
 
     *capriCoinButton
         name:Capricoin|Capricoins
@@ -114,7 +113,6 @@ Buttons
 	tags:coins
 	on start:yield 120 capriCoins
 	on click:yield 1 capriCoin
-	show earned
 
 Resources
 
@@ -123,6 +121,7 @@ Resources
 	desc:You can spend those on the KAMOSHIGACHA. (And some other things.)
 	tags:coins
 	on tick:yield 1 capriCoin
+	show earned
 
     *kamosmile|kamosmiles
 	name:Kamosmile|Kamosmiles
@@ -139,7 +138,8 @@ Resources
 	tags:caprine, cold
         desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> <b>Rarity:</b> Common.
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kamoshiglace.PNG
-		hidden when 0
+	hidden when 0
+	show earned
 
     *sadShika|sadShikas
 		name:Sadmoshika|Sadmoshikas
