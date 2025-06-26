@@ -87,6 +87,10 @@ height:50%;
 {
 	background-color:rgb(255, 236, 179);
 	color:rgb(203, 120, 74);
+	border-top-left-radius:18px;
+	border-bottom-left-radius:18px;
+	border-top-right-radius:18px;
+	border-bottom-right-radius:18px;
 }
 
 .kamoIcon
@@ -110,10 +114,6 @@ height:50%;
 .resource
 {
 	height:100%;
-	border-top-left-radius:18px;
-	border-bottom-left-radius:18px;
-	border-top-right-radius:18px;
-	border-bottom-right-radius:18px;
 }
 
 .angry
