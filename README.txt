@@ -93,7 +93,7 @@ Buttons
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/gacha.PNG
         no text
         class:bigButton hasFlares
-        icon class:shadowed noRepeat
+        icon class:noRepeat
         tooltip origin:bottom
         tooltip class:red
 
