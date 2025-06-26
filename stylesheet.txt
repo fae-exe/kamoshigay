@@ -21,14 +21,12 @@
 		left:0%;
 		height:40%;
 		width:100%;
-		background-size:40%;
 		}
 	#box-gachaBox{
 		position:absolute;
 		top:46%;
 		left:0%;
 		height:54%;
-		background-size:54%;
 		}
 
 /* KAMOSHIKA PART */
