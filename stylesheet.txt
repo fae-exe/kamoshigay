@@ -43,7 +43,7 @@ height:100%;
 
 /* All kamos share the height equally */
 #box-sadBox, #box-coldBox, #box-angryBox, #box-lonelyBox, #box-hungryBox{
-height:20%;
+height:18%;
 position: relative;
 }
 
