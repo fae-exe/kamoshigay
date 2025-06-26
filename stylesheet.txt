@@ -1,6 +1,6 @@
-// BOXES (LAYOUT)
+/* BOXES (LAYOUT) */
 
-// LEFTMOST PART
+/* LEFTMOST PART */
 #box-buttonsBox{
 position:absolute;
 margin:0;
@@ -32,7 +32,7 @@ background-size:contain;
 background-repeat:no-repeat;
 }
 
-// KAMOSHIKA PART 
+/* KAMOSHIKA PART */
 #box-kamoshikaBox{
 top: 0%;
 left:20%;
@@ -41,13 +41,13 @@ position: absolute;
 height:100%;
 }
 
-// All kamos share the height equally
+/* All kamos share the height equally */
 #box-sadBox, #box-coldBox, #box-angryBox, #box-lonelyBox, #box-hungryBox{
 height:20%;
 position: relative;
 }
 
-// BUILDINGS
+/* BUILDINGS */
 #box-healingBox, #box-jobBox, #box-smileConversionBox{
 left:40%;
 width:40%;
@@ -55,7 +55,7 @@ position:absolute;
 overflow-y:scroll;
 overflow-x:hidden;
 }
-// Healing-jobs-smile share the height 40-40-20	
+/* Healing-jobs-smile share the height 40-40-20	*/
 #box-healingBox{
 top:0%;
 height:40%
@@ -71,7 +71,7 @@ top:80%;
 height:20%;
 }
 
-// BOX CONTAINING THE CAPPYNESS (top right of screen)
+/* BOX CONTAINING THE CAPPYNESS (top right of screen) */
 #box-cappynessBox{
 top:0%;
 left:80%;
@@ -79,7 +79,7 @@ width:20%;
 height:50%;
 }
 
-// BOX CONTAINING THE UPGRADES (bottom right of screen)
+/* BOX CONTAINING THE UPGRADES (bottom right of screen) */
 #box-upgradeBox{
 top:50%;
 left:80%;
@@ -87,9 +87,9 @@ width:20%;
 height:50%;
 }
 
-// PROPERTIIIIES 
+/* PROPERTIIIIES */
 
-// All the things that don't have a more specific class have these properties
+/* All the things that don't have a more specific class have these properties */
 .thing,.box-footer,.box-bit
 {
 	background-color:rgb(255, 224, 130);
@@ -100,7 +100,7 @@ height:50%;
 	border-bottom-right-radius:18px;
 }
 
-// Headers properties
+/* Headers properties */
 .box-header, .tag-menuheader {
 	background:rgb(203, 120, 74); // dark orange
 	border:none;
@@ -117,7 +117,7 @@ height:50%;
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-// For the coin and gacha buttons
+/* For the coin and gacha buttons */
 .thing.bigButton, .hasFlares
 {
 margin-top:0px;
@@ -126,20 +126,20 @@ height:100%;
 background-repeat: no-repeat;
 }
 
-// For the kamo icons to be bigger than 48x48px
+/* For the kamo icons to be bigger than 48x48px */
 .kamoIcon
 {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
-// For icon backgrounds not to repeat (used for buttons)
+/* For icon backgrounds not to repeat (used for buttons) */
 .noRepeat
 {
 	background-repeat: no-repeat;
 }
 
-//.angryCaprine, .coldCaprine, .hungryCaprine, .lonelyCaprine, .sadCaprine{
+/*.angryCaprine, .coldCaprine, .hungryCaprine, .lonelyCaprine, .sadCaprine{ */
 .caprine{
 	height:100px;
 	text-align:center;
