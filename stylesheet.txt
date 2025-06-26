@@ -91,6 +91,7 @@ height:50%;
 font-size:120%;
 height:20%;
 background-color:rgb(199, 79, 79);
+color:rgb(149, 39, 39);
 }
 
 .cold
@@ -98,6 +99,7 @@ background-color:rgb(199, 79, 79);
 font-size:120%;
 height:20%;
 background-color:rgb(50, 168, 226);
+color:rgb(28, 148, 206);
 }
 
 .hungry
@@ -105,6 +107,7 @@ background-color:rgb(50, 168, 226);
 font-size:120%;
 height:20%;
 background-color:rgb(127, 167, 98);
+color:rgb(107, 147, 98);
 }
 
 .lonely
@@ -112,6 +115,7 @@ background-color:rgb(127, 167, 98);
 font-size:120%;
 height:20%;
 background-color:rgb(153, 132, 204);
+color:rgb(133, 102, 174);
 }
 
 
@@ -120,6 +124,7 @@ background-color:rgb(153, 132, 204);
 font-size:120%;
 height:20%;
 background-color:rgb(58, 66, 144);
+color:rgb(28, 36, 114);
 }
 
 
