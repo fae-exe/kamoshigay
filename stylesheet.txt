@@ -124,7 +124,7 @@ height:50%;
 	background-repeat: no-repeat;
 }
 
-.angryCaprine, coldCaprine, .hungryCaprine, .lonelyCaprine, .sadCaprine{
+.angryCaprine, .coldCaprine, .hungryCaprine, .lonelyCaprine, .sadCaprine{
 	height:100px;
 }
 
