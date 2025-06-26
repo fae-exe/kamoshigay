@@ -92,7 +92,7 @@ height:50%;
 
 .thing,.box-footer,.box-bit
 {
-	background-color:rgb(255, 236, 179);
+	background-color:rgb(255, 224, 130);
 	color:rgb(203, 120, 74);
 	border-top-left-radius:18px;
 	border-bottom-left-radius:18px;
