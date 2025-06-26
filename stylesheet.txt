@@ -28,7 +28,7 @@
 	#box-gachaBox{
 		position:absolute;
 		margin:0;
-		top:46%;
+		top:30%;
 		height:54%;
 		}
 
@@ -134,7 +134,7 @@ height:50%;
 
 /* For the kamo icons to be bigger than 48x48px */
 .kamoIcon{
-	width:200px;
+	width:100px;
 	margin-top:5px;
 	background-size: 100%;
 	background-repeat: no-repeat;
