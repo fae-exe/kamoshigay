@@ -123,6 +123,7 @@ height:50%;
 
 .angryCaprine, .coldCaprine, .hungryCaprine, .lonelyCaprine, .sadCaprine{
 	height:100px;
+	text-align:center;
 }
 
 .building
