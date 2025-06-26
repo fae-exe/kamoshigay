@@ -9,7 +9,11 @@ height:100%;
 
 #box-coinBox{
 background-color:rgb(0,0,0);
-position:static;
+position:absolute;
+top:0%;
+left:0%;
+width:20%;
+height:30%;
 }
 
 #box-gachaBox{
