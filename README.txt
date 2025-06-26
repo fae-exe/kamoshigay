@@ -18,44 +18,37 @@ Layout
 
 *buttonsBox
 	contains:coinBox, gachaBox
-
 	*coinBox
 		contains:tag:coins
-
 	*gachaBox
     		contains:tag:gachamachine
 
 *kamoshikaBox
     header:KAMOSHIKAS
     contains:coldBox, sadBox, hungryBox, lonelyBox, angryBox
-
 	*coldBox
 		contains:tag:cold
-	
 	*sadBox
 		contains:tag:sad
-	
 	*hungryBox
 		contains:tag:hungry
-	
 	*lonelyBox
 		contains:tag:lonely
-	
 	*angryBox
 		contains:tag:angry
 
 *healingBox
-		contains:tag:healangry, tag:healcold, tag:healhungry, tag:heallonely, tag:healsad
-    		header:Make your kamoshikas feel better :'(
-    		tooltip origin:left
-		icons:show
-		ps:show
+	contains:tag:healangry, tag:healcold, tag:healhungry, tag:heallonely, tag:healsad
+	header:Make your kamoshikas feel better :'(
+	tooltip origin:left
+	icons:show
+	ps:show
 *jobBox
-		contains:tag:job
-		header:Put them to work???
+	contains:tag:job
+	header:Put them to work???
 *smileConversionBox
-		contains:tag:smileConverter
-		header:Wait you can do that??????
+	contains:tag:smileConverter
+	header:Wait you can do that??????
 
 *cappynessBox
     contains:tag:crystals, tag:kamosmilesres
