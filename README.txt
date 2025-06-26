@@ -98,7 +98,7 @@ Buttons
         tooltip class:red
 
     *capriCoinButton
-        name:Capricoin|Capricoins
+        name:Capricoins
 	class:bigButton hasFlares
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. Click to gain Capricoins to spend on the KAMOSHIGACHA. 
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
@@ -110,7 +110,8 @@ Buttons
 Resources
 
     *capriCoin|capriCoins
-	name:The Capricoinbank
+	text:The Capricoinbank
+	name:Capricoins
 	desc:You can spend those on the KAMOSHIGACHA. (And some other things.)
 	tags:coinBank
 	on tick:yield 1 capriCoin
