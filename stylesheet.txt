@@ -35,8 +35,8 @@
 /* KAMOSHIKA PART */
 #box-kamoshikaBox{
 	top: 0%;
-	left:20%;
-	width:20%;
+	left:21%;
+	width:19%;
 	position: absolute;
 	height:100%;
 	}
@@ -46,12 +46,14 @@
 	height:18%;
 	width:100%;
 	position: relative;
+	padding-left:1%;
+	padding-right:1%
 	}
 
 /* BUILDINGS BOXES */
 #box-healingBox, #box-jobBox, #box-smileConversionBox{
 	left:40%;
-	width:40%;
+	width:39%;
 	position:absolute;
 	}
 /* Healing-jobs-smile share the height 40-40-20	*/
