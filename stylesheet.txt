@@ -52,13 +52,15 @@ position: relative;
 left:40%;
 width:40%;
 position:absolute;
-overflow-y:scroll;
-overflow-x:hidden;
 }
 /* Healing-jobs-smile share the height 40-40-20	*/
 #box-healingBox{
 top:0%;
-height:40%
+height:40%;
+overflow-y:scroll;
+overflow-x:hidden;
+scrollbar-width:auto;
+scrollbar-color:rgb(255, 224, 130);
 }
 
 #box-jobBox{
