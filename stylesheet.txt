@@ -142,7 +142,6 @@ height:50%;
 .angry, .angryCaprine
 {
 font-size:120%;
-height:20%;
 background-color:rgb(199, 79, 79);
 color:rgb(149, 39, 39);
 }
@@ -150,7 +149,6 @@ color:rgb(149, 39, 39);
 .cold, .coldCaprine
 {
 font-size:120%;
-height:20%;
 background-color:rgb(50, 168, 226);
 color:rgb(210, 242, 246);
 }
@@ -158,7 +156,6 @@ color:rgb(210, 242, 246);
 .hungry, .hungryCaprine
 {
 font-size:120%;
-height:20%;
 background-color:rgb(127, 167, 98);
 color:rgb(107, 147, 98);
 }
@@ -166,7 +163,6 @@ color:rgb(107, 147, 98);
 .lonely, .lonelyCaprine
 {
 font-size:120%;
-height:20%;
 background-color:rgb(133, 112, 184);
 color:rgb(243, 229, 270);
 }
@@ -175,7 +171,6 @@ color:rgb(243, 229, 270);
 .sad, .sadCaprine
 {
 font-size:120%;
-height:20%;
 background-color:rgb(72, 116, 183);
 color:rgb(144, 202, 249);
 }
@@ -184,7 +179,6 @@ color:rgb(144, 202, 249);
 .hungrysad
 {
 font-size:120%;
-height:20%;
 background-color:rgb(120, 120, 120);
 }
 
@@ -192,7 +186,6 @@ background-color:rgb(120, 120, 120);
 .hungrylonely
 {
 font-size:120%;
-height:20%;
 background-color:rgb(120, 120, 120);
 }
 
@@ -200,7 +193,6 @@ background-color:rgb(120, 120, 120);
 .lonelysad
 {
 font-size:120%;
-height:20%;
 background-color:rgb(120, 120, 120);
 }
 
@@ -208,7 +200,6 @@ background-color:rgb(120, 120, 120);
 .angrylonelysad
 {
 font-size:120%;
-height:20%;
 background-color:rgb(120, 120, 120);
 }
 
