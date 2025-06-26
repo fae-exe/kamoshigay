@@ -19,7 +19,9 @@ Layout
 *buttonsBox
 	contains:coinBox, gachaBox
 	*coinBox
-		contains:tag:coins
+		contains:tag:coin
+	*coinBankBox
+		contains:tag:coinBank
 	*gachaBox
     		contains:tag:gachamachine
 
@@ -100,7 +102,7 @@ Buttons
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. Click to gain Capricoins to spend on the KAMOSHIGACHA. 
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
 	icon class:kamoIcon
-	tags:coins
+	tags:coin
 	on start:yield 120 capriCoins
 	on click:yield 1 capriCoin
 
@@ -109,7 +111,7 @@ Resources
     *capriCoin|capriCoins
 	name:The Capricoinbank
 	desc:You can spend those on the KAMOSHIGACHA. (And some other things.)
-	tags:coins, coinBank
+	tags:coinBank
 	on tick:yield 1 capriCoin
 	show earned
 
