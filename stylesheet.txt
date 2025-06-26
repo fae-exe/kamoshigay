@@ -26,48 +26,48 @@
 		height:40%;
 		}
 	#box-gachaBox{
+		position:relative;
 		margin:0;
-		position:absolute;
 		top:0%;
-		height:44%;
+		height:54%;
 		}
 
 /* KAMOSHIKA PART */
 #box-kamoshikaBox{
-top: 0%;
-left:20%;
-width:20%;
-position: absolute;
-height:100%;
-}
+	top: 0%;
+	left:20%;
+	width:20%;
+	position: absolute;
+	height:100%;
+	}
 
 /* All kamos share the height equally */
 #box-sadBox, #box-coldBox, #box-angryBox, #box-lonelyBox, #box-hungryBox{
-height:18%;
-width:100%;
-position: relative;
-}
+	height:18%;
+	width:100%;
+	position: relative;
+	}
 
-/* BUILDINGS */
+/* BUILDINGS BOXES */
 #box-healingBox, #box-jobBox, #box-smileConversionBox{
-left:40%;
-width:40%;
-position:absolute;
-}
+	left:40%;
+	width:40%;
+	position:absolute;
+	}
 /* Healing-jobs-smile share the height 40-40-20	*/
 #box-healingBox{
-top:0%;
-height:38%;
-overflow-y:scroll;
-overflow-x:hidden;
-scrollbar-width:auto;
-scrollbar-color:rgb(255, 224, 130);
-}
+	top:0%;
+	height:38%;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	scrollbar-width:auto;
+	scrollbar-color:rgb(255, 224, 130);
+	}
 
 #box-jobBox{
-top:40%;
-height:38%;
-}
+	top:40%;
+	height:38%;
+	}
 
 #box-smileConversionBox{
 top:78%;
