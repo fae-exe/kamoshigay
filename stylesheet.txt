@@ -8,8 +8,6 @@
 	left: 0%;
 	width:20%;
 	height:99%;
-	background-size:contain;
-	background-repeat:no-repeat;
 	}
 	#box-coinBankBox{
 		position:absolute;
@@ -23,11 +21,12 @@
 	#box-coinBox{
 		position:absolute;
 		margin:0;
-		top:16%;
+		top:6%;
 		left:0%;
 		height:40%;
 		width:100%;
 		background-color:rgb(0,0,0);
+		background-size:100%;
 		}
 	#box-gachaBox{
 		position:absolute;
