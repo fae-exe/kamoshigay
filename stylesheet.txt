@@ -1,6 +1,7 @@
 #box-buttonsBox{
 position:absolute;
-background-color:rgb(255, 255, 255);
+margin-top:0px;
+margin-left:0px;
 top:0%;
 left: 0%;
 width:20%;
@@ -10,26 +11,25 @@ height:100%;
 #box-coinBox{
 background-color:rgb(0,0,0);
 position:absolute;
-margin-top:0px;
-margin-left:0px;
 top:0%;
 left:0%;
-width:20%;
 height:30%;
 }
 
 #box-coinBankBox{
-background-color:rgb(0,0,0);
+background-color:rgb(100,100,100);
 position:absolute;
-top:0%;
+top:10%;
 left:0%;
-width:20%;
 height:30%;
 }
 
 #box-gachaBox{
-background-color:rgb(100, 100, 100);
-position:relative;
+background-color:rgb(255, 255, 255);
+position:absolute;
+top:50%;
+height:40%;
+background-size:100%;
 }
 
 
