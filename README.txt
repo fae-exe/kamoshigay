@@ -126,7 +126,8 @@ Resources
 
     *coldKamoshika|coldKamoshikas
         name:Kamoshiglace|Kamoshiglaces
-	class:cold caprine
+	class:cold 
+	class:caprine
 	icon class:kamoIcon
 	tags:caprine, cold
         desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> <b>Rarity:</b> Common.
@@ -136,7 +137,7 @@ Resources
 
     *sadShika|sadShikas
 		name:Sadmoshika|Sadmoshikas
-		class:sad caprine
+		class:sad 
 		icon class:kamoIcon
 		tags:caprine, sad
 		desc:These kamoshikas are sad because they want to play! <//> <b>Rarity:</b> Uncommon.
@@ -145,7 +146,7 @@ Resources
 
     *hungryShika|hungryShikas
 		name:Hungrishika|Hungrishikas
-		class:hungry caprine
+		class:hungry
 		icon class:kamoIcon
 		tags:carpine, hungry
 		desc:These kamoshikas are always hungry. You could be shoveling grass into them all day long. <//> <b>Rarity:</b> Rare.
@@ -153,7 +154,7 @@ Resources
 
     *angryShika|angryShikas
 		name:Kaboomshika|Kaboomshikas
-		class:angry caprine
+		class:angry
 		icon class:kamoIcon
 		tags:caprine, angry
 		desc:These kamoshikas are very angry and need to calm down. Maybe some meditation, or a punching-ball. <//> <b>Rarity:</b> Extra rare.
@@ -161,7 +162,7 @@ Resources
 
     *lonelyShika|lonelyShikas
 		name:Kaloneshika|Kaloneshikas
-		class:lonely caprine
+		class:lonely
 		icon class:kamoIcon
 		tags:caprine, lonely
 		desc:These mountain goats have lives alone on their big mountains for so long, they want a little company. <//> <b>Rarity:</b> Secret rare.
