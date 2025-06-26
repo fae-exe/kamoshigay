@@ -1,5 +1,5 @@
 #box-buttonsBox{
-top:40%;
+top:0%;
 left: 0%;
 width:20%;
 position: absolute;
@@ -10,7 +10,7 @@ height:100%
 }
 
 #box-gachaBox{
-top:60%;
+top:30%;
 }
 
 .thing.bigButton
