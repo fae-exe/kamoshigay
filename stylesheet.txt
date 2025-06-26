@@ -130,8 +130,6 @@ height:50%;
 
 /* For the coin and gacha buttons */
 .thing.bigButton, .hasFlares{
-	margin:0;
-	padding:0;
 	}
 
 /* For the kamo icons to be bigger than 48x48px */
