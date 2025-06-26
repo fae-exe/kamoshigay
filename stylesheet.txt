@@ -2,35 +2,35 @@
 
 /* LEFTMOST PART */
 #box-buttonsBox{
-position:absolute;
-margin:0;
-top:0%;
-left: 0%;
-width:20%;
-height:100%;
-background-size:contain;
-background-repeat:no-repeat;
-}
-#box-coinBankBox{
-position:absolute;
-margin:0;
-top:0%;
-left:10%;
-height:16%;
-}
-#box-coinBox{
-position:absolute;
-margin:0;
-left:5%;
-top:0%;
-height:50%;
-}
-#box-gachaBox{
-margin:0;
-position:absolute;
-top:0%;
-height:100%;
-}
+	position:absolute;
+	margin:0;
+	top:0%;
+	left: 0%;
+	width:20%;
+	height:100%;
+	background-size:contain;
+	background-repeat:no-repeat;
+	}
+	#box-coinBankBox{
+		position:absolute;
+		margin:0;
+		top:0%;
+		left:10%;
+		height:16%;
+		}
+	#box-coinBox{
+		position:absolute;
+		margin:0;
+		left:5%;
+		top:0%;
+		height:50%;
+		}
+	#box-gachaBox{
+		margin:0;
+		position:absolute;
+		top:0%;
+		height:100%;
+		}
 
 /* KAMOSHIKA PART */
 #box-kamoshikaBox{
