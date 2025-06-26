@@ -134,8 +134,7 @@ height:50%;
 
 /* For the kamo icons to be bigger than 48x48px */
 .kamoIcon{
-	height:100px;
-	width:100px;
+	width:200px;
 	margin-top:5px;
 	background-size: 100%;
 	background-repeat: no-repeat;
