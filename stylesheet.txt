@@ -129,7 +129,7 @@ color:rgb(107, 147, 98);
 font-size:120%;
 height:20%;
 background-color:rgb(153, 132, 204);
-color:rgb(133, 102, 174);
+color:rgb(203, 189, 230);
 }
 
 
