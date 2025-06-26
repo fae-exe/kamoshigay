@@ -149,6 +149,7 @@ height:50%;
 /*.angryCaprine, .coldCaprine, .hungryCaprine, .lonelyCaprine, .sadCaprine{ */
 .caprine{
 	height:100px;
+	width:100%;
 	text-align:center;
 	padding: 20px 0;
 }
