@@ -93,12 +93,24 @@ height:50%;
 	color:rgb(203, 120, 74);
 }
 
-
 .kamoIcon
 {
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+
+
+.building
+{
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	border-top-right-radius:8px;
+	border-bottom-right-radius:8px;
+	display:block;
+	margin-right:0px;
+	font-size:14px;
+}
+
 
 .angry
 {
