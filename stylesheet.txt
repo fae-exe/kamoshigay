@@ -7,21 +7,21 @@ width:20%;
 height:100%;
 }
 
-#box-coinBox{
-position:absolute;
-margin:0;
-top:0%;
-left:5%;
-height:30%;
-}
-
 #box-coinBankBox{
 position:absolute;
 margin:0;
 width:20%;
 top:0%;
 left:0%;
-height:30%;
+height:16%;
+}
+
+#box-coinBox{
+position:absolute;
+margin:0;
+top:0%;
+left:5%;
+height:20%;
 }
 
 #box-gachaBox{
