@@ -116,7 +116,7 @@ Resources
     *capriCoin|capriCoins
 	name:The Capricoinbank
 	desc:You can spend those on the KAMOSHIGACHA. (And some other things.)
-	tags:coins
+	tags:coins, coinBank
 	on tick:yield 1 capriCoin
 	show earned
 
