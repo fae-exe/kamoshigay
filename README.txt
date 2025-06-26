@@ -125,7 +125,7 @@ Resources
 
     *coldKamoshika|coldKamoshikas
         name:Kamoshiglace|Kamoshiglaces
-	class:cold
+	class:coldCaprine
 	icon class:kamoIcon
 	tags:caprine, cold
         desc:These kamoshikas are so cold they turned to ice and need to be warmed up. <//> <b>Rarity:</b> Common.
