@@ -3,16 +3,14 @@ top:0%;
 left: 0%;
 width:20%;
 position: absolute;
+height:100%
 }
 
 #box-coinBox{
-height:50%;
 }
 
 #box-gachaBox{
-position:relative;
 top:50%;
-height:50%;
 }
 
 .thing.bigButton
