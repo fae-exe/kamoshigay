@@ -120,7 +120,7 @@ height:50%;
 
 .resource
 {
-	height:100%;
+	height:146px;
 }
 
 .angry
