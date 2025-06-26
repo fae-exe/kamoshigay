@@ -131,6 +131,8 @@ background-repeat: no-repeat;
 /* For the kamo icons to be bigger than 48x48px */
 .kamoIcon
 {
+	height:90px;
+	margin-top:5px;
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -160,32 +162,32 @@ background-repeat: no-repeat;
 }
 
 
-.angry, .angryCaprine
+.angry
 {
 background-color:rgb(199, 79, 79);
 color:rgb(149, 39, 39);
 }
 
-.cold, .coldCaprine
+.cold
 {
 background-color:rgb(50, 168, 226);
 color:rgb(210, 242, 246);
 }
 
-.hungry, .hungryCaprine
+.hungry
 {
 background-color:rgb(127, 167, 98);
 color:rgb(107, 147, 98);
 }
 
-.lonely, .lonelyCaprine
+.lonely
 {
 background-color:rgb(133, 112, 184);
 color:rgb(243, 229, 270);
 }
 
 
-.sad, .sadCaprine
+.sad
 {
 background-color:rgb(72, 116, 183);
 color:rgb(144, 202, 249);
