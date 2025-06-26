@@ -166,7 +166,7 @@ color:rgb(107, 147, 98);
 {
 font-size:120%;
 height:20%;
-background-color:rgb(153, 132, 204);
+background-color:rgb(133, 112, 184);
 color:rgb(243, 229, 270);
 }
 
