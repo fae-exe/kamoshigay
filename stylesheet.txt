@@ -22,13 +22,13 @@
 		position:absolute;
 		margin:0;
 		left:5%;
-		top:0%;
-		height:40%;
+		top:16%;
+		height:30%;
 		}
 	#box-gachaBox{
 		position:absolute;
 		margin:0;
-		top:0%;
+		top:46%;
 		height:54%;
 		}
 
