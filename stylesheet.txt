@@ -135,6 +135,7 @@ height:50%;
 	margin-top:5px;
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-color:rgb(0,0,0);
 }
 
 /* For icon backgrounds not to repeat (used for buttons) */
