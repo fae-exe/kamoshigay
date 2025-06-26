@@ -15,13 +15,11 @@
 		position:absolute;
 		margin:0;
 		top:0%;
-		left:10%;
 		height:16%;
 		}
 	#box-coinBox{
 		position:absolute;
 		margin:0;
-		left:5%;
 		top:16%;
 		height:30%;
 		}
