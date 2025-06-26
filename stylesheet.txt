@@ -75,7 +75,8 @@ height:50%;
 
 .thing,.box-footer,.box-bit
 {
-	background-color:transparent;
+	background-color:rgb(253, 247, 233);
+	color:rgb(203, 120, 74);
 }
 
 
