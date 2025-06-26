@@ -57,7 +57,7 @@ position:absolute;
 /* Healing-jobs-smile share the height 40-40-20	*/
 #box-healingBox{
 top:0%;
-height:40%;
+height:38%;
 overflow-y:scroll;
 overflow-x:hidden;
 scrollbar-width:auto;
@@ -66,12 +66,12 @@ scrollbar-color:rgb(255, 224, 130);
 
 #box-jobBox{
 top:40%;
-height:40%;
+height:38%;
 }
 
 #box-smileConversionBox{
-top:80%;
-height:20%;
+top:78%;
+height:22%;
 }
 
 /* BOX CONTAINING THE CAPPYNESS (top right of screen) */
@@ -112,7 +112,7 @@ height:50%;
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
 	margin-bottom:4px;
-	margin-top:6px;
+	margin-top:0px;
 	padding:8px 8px;
 	font-size:16px;
 	text-shadow-color:white;
