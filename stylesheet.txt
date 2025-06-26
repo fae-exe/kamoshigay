@@ -53,7 +53,7 @@ height:100%;
 }
 
 #box-sadBox, #box-coldBox, #box-angryBox, #box-lonelyBox, #box-hungryBox{
-height: 20%;
+height:100%;
 position: relative;
 }
 
