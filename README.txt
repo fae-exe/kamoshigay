@@ -93,7 +93,7 @@ Buttons
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/gacha.PNG
         no text
         class:bigButton hasFlares
-        icon class:shadowed
+        icon class:shadowed noRepeat
         tooltip origin:bottom
         tooltip class:red
 
@@ -102,7 +102,7 @@ Buttons
 	class:bigButton hasFlares
         desc:Fell from heaven with the KAMOSHIGACHA MACHINE. Click to gain Capricoins to spend on the KAMOSHIGACHA. 
         icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/capricrystals.PNG
-	icon class:kamoIcon
+	icon class:noRepeat
 	tags:coin
 	on start:yield 120 capriCoins
 	on click:yield 1 capriCoin
