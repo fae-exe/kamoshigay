@@ -17,11 +17,12 @@ Settings
 Layout
 
 *buttonsBox
-	contains:coinBox, gachaBox
-	*coinBox
-		contains:tag:coin
+	contains:coinBankBox, coinBox, gachaBox
 	*coinBankBox
 		contains:tag:coinBank
+	*coinBox
+		contains:tag:coin
+		names:hide
 	*gachaBox
     		contains:tag:gachamachine
 
