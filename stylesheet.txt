@@ -99,7 +99,7 @@ color:rgb(149, 39, 39);
 font-size:120%;
 height:20%;
 background-color:rgb(50, 168, 226);
-color:rgb(28, 148, 206);
+color:rgb(210, 242, 246);
 }
 
 .hungry
@@ -123,8 +123,8 @@ color:rgb(133, 102, 174);
 {
 font-size:120%;
 height:20%;
-background-color:rgb(58, 66, 144);
-color:rgb(28, 36, 114);
+background-color:rgb(72, 116, 183);
+color:rgb(144, 202, 249);
 }
 
 
