@@ -110,8 +110,8 @@ Buttons
 Resources
 
     *capriCoin|capriCoins
-	text:The Capricoinbank
-	name:Capricoins
+	text:You have [?(this=0)|no gold|[this] gold].
+	name:capriCoinBank
 	desc:You can spend those on the KAMOSHIGACHA. (And some other things.)
 	tags:coinBank
 	on tick:yield 1 capriCoin
