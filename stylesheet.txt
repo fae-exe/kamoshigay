@@ -125,14 +125,15 @@ height:50%;
 .thing.bigButton, .hasFlares{
 	margin-top:0px;
 	margin-left:0px;
-	background-size:contain;
+	background-size:100%;
 	background-repeat: no-repeat;
 	}
 
 /* For the kamo icons to be bigger than 48x48px */
 .kamoIcon{
 	width:100px;
-	margin-top:5px;
+	margin-top:-25px;
+	margin-bottom:-25px;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-color:rgb(0,0,0);
