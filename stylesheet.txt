@@ -72,6 +72,13 @@ width:20%;
 height:50%;
 }
 
+
+.thing,.box-footer,.box-bit
+{
+	background-color:transparent;
+}
+
+
 .kamoIcon
 {
     background-size: contain;
@@ -165,11 +172,6 @@ z-index:1000;
 	text-shadow-color:white;
 	color:rgb(137, 39, 9);
 	cursor:default;
-}
-
-.thing,.box-footer,.box-bit
-{
-	background-color:transparent;
 }
 
 
