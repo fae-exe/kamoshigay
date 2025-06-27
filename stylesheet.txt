@@ -176,36 +176,30 @@ height:50%;
 	font-size:14px;
 }
 
-
-.angry
-{
-background-color:rgb(199, 79, 79);
-color:rgb(149, 39, 39);
+.angry {
+	background-color: rgb(211, 78, 71);
+	color: rgb(255, 225, 225);
 }
 
-.cold
-{
-background-color:rgb(50, 168, 226);
-color:rgb(210, 242, 246);
+.cold {
+	background-color: rgb(103, 203, 234);
+	color: rgb(229, 252, 255);
 }
 
-.hungry
-{
-background-color:rgb(127, 167, 98);
-color:rgb(107, 147, 98);
+.hungry {
+	background-color: rgb(131, 172, 101);
+	color: rgb(221, 255, 181);
 }
 
-.lonely
-{
-background-color:rgb(133, 112, 184);
-color:rgb(243, 229, 270);
+.lonely {
+	background-color: rgb(151, 112, 184);
+	color: rgb(243, 229, 270);
 }
 
 
-.sad
-{
-background-color:rgb(72, 116, 183);
-color:rgb(144, 202, 249);
+.sad {
+	background-color: rgb(80, 123, 204);
+	color: rgb(227, 236, 255);
 }
 
 
