@@ -103,6 +103,7 @@ height:50%;
 	border-bottom-left-radius:18px;
 	border-top-right-radius:18px;
 	border-bottom-right-radius:18px;
+	padding:100px 100px;
 }
 
 /* Headers properties */
