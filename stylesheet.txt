@@ -30,7 +30,7 @@
 		position:absolute;
 		top:46%;
 		left:0%;
-		height:34%;
+		height:54%;
 		width:100%;
 		background-color:rgb(100,100,100);
 		}
@@ -126,7 +126,7 @@ height:50%;
 
 /* For the coin and gacha buttons */
 .thing.bigButton, .hasFlares{
-	height:100%;
+	width:20%;
 	}
 
 /* For the kamo icons to be bigger than 48x48px */
