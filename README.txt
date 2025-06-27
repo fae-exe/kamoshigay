@@ -141,7 +141,6 @@ Resources
 		icon class:kamoIcon
 		tags:caprine, sad
 		desc:These kamoshikas are sad because they want to play! <//> <b>Rarity:</b> Uncommon.
-		icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/sadserow.PNG
 		hidden when 0
 
     *hungryShika|hungryShikas
@@ -165,6 +164,7 @@ Resources
 		class:lonely caprine
 		icon class:kamoIcon
 		tags:caprine, lonely
+		icon:https://raw.githubusercontent.com/fae-exe/kamoshigay/refs/heads/main/kaloneshika.PNG
 		desc:These mountain goats have lives alone on their big mountains for so long, they want a little company. <//> <b>Rarity:</b> Secret rare.
 		hidden when 0
 
