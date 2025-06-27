@@ -126,7 +126,7 @@ Resources
 	show earned
 
     *coldKamoshika|coldKamoshikas
-        name:Kamoshiglace|Kamoshiglaces
+        name:Kamoshicold|Kamoshicolds
 	class:cold caprine
 	icon class:kamoIcon
 	tags:caprine, cold
@@ -177,7 +177,7 @@ Buildings
         
     *heater
         name:Heater
-        desc:<q>Generates a little heat to make your freezing kamoshikas warmer and happier.</q> <//> <.> Generates <b>0.1 kamosmile</b> per <b>kamoshiglace</b> per second.
+        desc:<q>Generates a little heat to make your freezing kamoshikas warmer and happier.</q> <//> <.> Generates <b>0.1 kamosmile</b> per <b>kamoshicold</b> per second.
         cost:20 capriCoins
 		class:cold
         icon:icons[0,1]
@@ -187,7 +187,7 @@ Buildings
 
     *bigBlanket
 	name:Big blanket
-	desc:<q>The kamoshikas can all huddle under this big blanket for warmth.</q> <//> <.> Generates <b>0.2 kamosmile</b> per <b>kamoshiglace</b> per second.
+	desc:<q>The kamoshikas can all huddle under this big blanket for warmth.</q> <//> <.> Generates <b>0.2 kamosmile</b> per <b>kamoshicold</b> per second.
 	cost:100 capriCoins
 	class:cold
 	icon:icons[0,2]
@@ -329,7 +329,7 @@ Buildings
     *coldExplorer
 	name:Train cold explorers
 	class:cold
-	desc:<q>Gives very heavy coats to a kamoshikas so they can face their fear and explore the wilds in search of capricoins!</q> <//> <.> Rescue 1 kamoshiglace every 50 seconds.
+	desc:<q>Gives very heavy coats to a kamoshikas so they can face their fear and explore the wilds in search of capricoins!</q> <//> <.> Rescue 1 kamoshicold every 50 seconds.
 	cost:100 capriCoins, 1 coldKamoshika
 	tags:job
 	on tick:yield 0.5 capriCoin
@@ -339,7 +339,7 @@ Buildings
     *goatRescuer
 	name:Train shika rescuers
 	class:sad
-	desc:<q>Gives helicopters and pilot licenses to your sad kamoshikas. The fulfillment of saving kamoshikas from the cold distracts them from their awful sadness.</q> <//> <.> Rescue 1 kamoshiglace every 50 seconds.
+	desc:<q>Gives helicopters and pilot licenses to your sad kamoshikas. The fulfillment of saving kamoshikas from the cold distracts them from their awful sadness.</q> <//> <.> Rescue 1 kamoshicold every 50 seconds.
 	cost:250 capriCoins, 1 sadShika
 	tags:job
 	on tick:yield 0.02 coldKamoshika
@@ -410,7 +410,7 @@ Buildings
 
     *coldMutator
 		name:Cold-mutation
-		desc:<q>This process can distillate the essence of kamoshiglaces into a singular sadmoshika, taking the cold from <i>outside</i> the goats and concentrating it within a single one of them. The others are released into the wild.</q> <//> <.> Gives you 1 sadmoshika.
+		desc:<q>This process can distillate the essence of kamoshicolds into a singular sadmoshika, taking the cold from <i>outside</i> the goats and concentrating it within a single one of them. The others are released into the wild.</q> <//> <.> Gives you 1 sadmoshika.
 		cost:5 coldKamoshika, 500 capriCoins
 		tags:transmutation
 		on earn:yield 1 sadShika
