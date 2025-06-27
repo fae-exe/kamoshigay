@@ -27,6 +27,7 @@
 		top:46%;
 		left:0%;
 		height:54%;
+		width:100%;
 		}
 
 /* KAMOSHIKA PART */
