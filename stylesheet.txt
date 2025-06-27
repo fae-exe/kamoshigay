@@ -23,9 +23,6 @@
 		position:absolute;
 		top:6%;
 		left:0%;
-		height:40%;
-		width:100%;
-		background-size: 200%;
 		}
 	#box-gachaBox{
 		position:absolute;
