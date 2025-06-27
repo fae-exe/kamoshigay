@@ -205,7 +205,8 @@ height:50%;
 
 .hungrysad
 {
-background-color:rgb(120, 120, 120);
+background: #83AC65;
+background: linear-gradient(90deg, rgba(131, 172, 101, 1) 0%, rgba(80, 123, 204, 1) 100%);
 }
 
 
