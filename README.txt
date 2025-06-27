@@ -267,7 +267,7 @@ Buildings
 
     *playPen
 	name:Play pen
-	class:hungrysad
+	class:hungry hungrysad sad
 	desc:A play pen for both your kaloneshikas and your sadshikas! Playing together means being together! <//> <.> Generates <b>0.5 kamosmile</b> per <b>sadmoshika</b> per second. <.> Generates <b>20 kamosmile</b> per <b>kaloneshika</b> per second.
 	cost:1000 capriCoins
 	tags:heallonely, healsad
